@@ -1,19 +1,28 @@
 import type { AppProps } from "next/app";
-import { ChakraProvider, defineConfig, createSystem } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const config = defineConfig({
-  theme: {
-    tokens: {
-      
-    }
+const colors = {
+  barber: {
+    900: '#12131b',
+    400: '#1b1c29',
+    100: '#c6c6c6'
+  },
+  button: {
+    cta: '#fba931',
+    default: '#fff',
+    gray: '#dfdfdf',
+    danger: '#ff4040'
+  },
+  orange: {
+    900: '#fba931'
   }
-});
+}
 
-const system = createSystem(config)
+const theme = extendTheme({ colors })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider value={system}>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />;
     </ChakraProvider>
   ) 
