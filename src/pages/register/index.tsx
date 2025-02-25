@@ -5,18 +5,19 @@ import logoImg from '../../../public/images/logo.svg'
 import { Button, Center, Flex, Input, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default function Login() {
+export default function Register() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleLogin() {
-   alert(email)
+  function handleRegister() {
+    
   }
 
   return (
     <>
       <Head>
-        <title>BarberPRO - Faça login para acessar</title>
+        <title>BarberPRO - Cadastre-se</title>
       </Head>
       <Flex background="barber.900" height="100vh" alignItems="center" justifyContent="center">
         <Flex width={640} direction='column' p={14} rounded={8}>
@@ -29,6 +30,17 @@ export default function Login() {
                     width={240}
                 />
             </Center>
+
+            <Input 
+              background="barber.400" 
+              variant="filled" 
+              size="lg" 
+              placeholder="Nome da barbearia" 
+              type="text"
+              mb={3}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
 
             <Input 
               background="barber.400" 
@@ -58,14 +70,14 @@ export default function Login() {
               color="gray.900"
               size="lg"
               _hover={{ background: "#ffb13e" }}
-              onClick={handleLogin}
+              onClick={handleRegister}
             >
-              Acessar
+              Cadastrar
             </Button>
 
             <Center mt={2}>
-              <Link href="/register">
-                <Text cursor="pointer" color="#fff">Ainda não possui conta? <strong>Cadastra-se</strong></Text>
+              <Link href="/login">
+                <Text cursor="pointer" color="#fff">Já possui conta? <strong>Faça o login</strong></Text>
               </Link>
             </Center>
 
