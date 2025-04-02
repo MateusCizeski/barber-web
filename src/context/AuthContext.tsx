@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useState } from "react";
 import { destroyCookie, setCookie } from "nookies";
-import { Router } from "next/router";
+import { useRouter  } from "next/router";
 
 import { api } from "@/services/apiClient";
 
@@ -44,8 +44,9 @@ export const AuthContext = createContext({} as AuthContextData);
 
 export function signOut() {
     try {
+        const router = useRouter();
         destroyCookie(null, '@barber.token', { path: '/' });
-        Router.push('/login');
+        router.push('/login');
     }catch(err) {
         console.log("Erro", err)
     }
@@ -54,6 +55,7 @@ export function signOut() {
 export function AuthProvider({ children }: AuthProviderProps) {
     const [user, setUser] = useState<UserProps>();
     const isAuthenticated = !!user;
+    const router = useRouter();
 
     async function signIn({ email, password }: SignInProps) {
         try {
@@ -78,7 +80,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
             });
 
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-            Router.push('/dashboard');
+            router.push('/dashboard');
         }
         catch(err) {
             console.log('erro ao entrar', err);
@@ -93,7 +95,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
                 password
             });
 
-            Router.push('/login');
+            router.push('/login');
         }
         catch(err) {
             console.log('erro ao entrar', err);
@@ -103,7 +105,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     async function logoutUser() {
         try {
            destroyCookie(null, '@barber.token', { path: '/' });
-           Router.push('/login');
+           router.push('/login');
            setUser(null);
         }
         catch(err) {
