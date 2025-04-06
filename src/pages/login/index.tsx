@@ -5,6 +5,7 @@ import logoImg from '../../../public/images/logo.svg'
 import { Button, Center, Flex, Input, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { AuthContext } from "@/context/AuthContext";
+import { canSRRGuest } from "@/utils/canSSRGuest";
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -12,6 +13,11 @@ export default function Login() {
   const { signIn } = useContext(AuthContext);
 
   async function handleLogin() {
+
+    if(email == '' || password == '') {
+      return;
+    }
+
    await signIn({ email, password });
   }
 
@@ -20,7 +26,13 @@ export default function Login() {
       <Head>
         <title>BarberPRO - Faça login para acessar</title>
       </Head>
-      <Flex background="barber.900" height="100vh" alignItems="center" justifyContent="center">
+      <Flex sx={{
+          background: "barber.900", 
+          height: "100vh" ,
+          alignItems:"center", 
+          justifyContent:"center"
+        }} 
+        >
         <Flex width={640} direction='column' p={14} rounded={8}>
             <Center p={4}>
                 <Image 
@@ -32,13 +44,15 @@ export default function Login() {
                 />
             </Center>
 
-            <Input 
-              background="barber.400" 
-              variant="filled" 
-              size="lg" 
-              placeholder="email@email.com" 
-              type="email"
-              mb={3}
+            <Input
+              sx={{
+                background: "barber.400", 
+                variant: "filled" ,
+                size:"lg",
+                placeholder:"email@email.com", 
+                type:"email",
+                mb: 3
+              }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -54,11 +68,13 @@ export default function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <Button 
-              background="button.cta"
-              mb={6}
-              color="gray.900"
-              size="lg"
+            <Button
+              sx={{
+                background: "button.cta",
+                mb: 6,
+                color:"gray.900",
+                size:"lg"
+              }}
               _hover={{ background: "#ffb13e" }}
               onClick={handleLogin}
             >
@@ -67,7 +83,12 @@ export default function Login() {
 
             <Center mt={2}>
               <Link href="/register">
-                <Text cursor="pointer" color="#fff">Ainda não possui conta? <strong>Cadastra-se</strong></Text>
+                <Text sx={{
+                  cursor: "pointer", 
+                  color: "#fff"
+                }} 
+                >Ainda não possui conta? <strong>Cadastra-se</strong>
+              </Text>
               </Link>
             </Center>
 
@@ -76,3 +97,9 @@ export default function Login() {
     </>
   );
 }
+
+export const getServerSideProps = canSRRGuest(async (ctx) => {
+  return {
+    props: {}
+  }
+});

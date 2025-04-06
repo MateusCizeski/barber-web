@@ -5,6 +5,7 @@ import logoImg from '../../../public/images/logo.svg'
 import { Button, Center, Flex, Input, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { AuthContext } from "@/context/AuthContext";
+import { canSRRGuest } from "@/utils/canSSRGuest";
 
 export default function Register() {
   const [name, setName] = useState('');
@@ -52,13 +53,15 @@ export default function Register() {
               onChange={(e) => setName(e.target.value)}
             />
 
-            <Input 
-              background="barber.400" 
-              variant="filled" 
-              size="lg" 
-              placeholder="email@email.com" 
-              type="email"
-              mb={3}
+            <Input
+              sx={{
+                background: "barber.400", 
+                variant: "filled",
+                size: "lg", 
+                placeholder: "email@email.com", 
+                type: "email",
+                mb: 3
+              }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -103,3 +106,9 @@ export default function Register() {
     </>
   );
 }
+
+export const getServerSideProps = canSRRGuest(async (ctx) => {
+  return {
+    props: {}
+  }
+});
