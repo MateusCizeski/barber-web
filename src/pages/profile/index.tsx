@@ -1,9 +1,34 @@
+import { useContext, useState } from "react";
 import Head from "next/head";
 import { Flex, Text, Heading, Box, Input, Button } from "@chakra-ui/react";
 import { Sidebar } from "@/components/sidebar";
 import Link from "next/link";
+import { canSRRAuth } from "@/utils/canSSRAuth";
+import { AuthContext } from "@/context/AuthContext";
+import { setupApiClient } from "@/services/api";
 
-export default function Profile() {
+interface UserProps {
+    id: string;
+    name: string;
+    email: string;
+    endereco: string | null;
+}
+
+interface ProfileProps {
+    user: UserProps;
+    premium: boolean;
+}
+
+export default function Profile({ user, premium }: ProfileProps) {
+    const { logoutUser } = useContext(AuthContext);
+
+    const [name, setName] = useState(user && user?.name);
+    const [endereco, setEndereco] = useState(user && user?.endereco);
+    
+    async function hableLogout() {
+        await logoutUser();
+    }
+
     return (
         <>
             <Head>
@@ -11,9 +36,11 @@ export default function Profile() {
             </Head>
             <Sidebar>
                 <Flex 
-                    direction="column" 
-                    alignItems="flex-start" 
-                    justifyContent="flex-start"
+                    sx={{
+                        direction:"column", 
+                        alignItems:"flex-start", 
+                        justifyContent:"flex-start"
+                    }}
                 >
                     <Flex 
                         w="100%" 
@@ -21,12 +48,14 @@ export default function Profile() {
                         alignItems="center" 
                         justify="flex-start"
                     >
-                        <Heading 
-                            fontSize="3xl" 
-                            mt={4} 
-                            mb={4} 
-                            mr={4} 
-                            color="orange.900"
+                        <Heading
+                            sx={{
+                                fontSize: "3xl", 
+                                mt: 4, 
+                                mb: 4, 
+                                mr: 4, 
+                                color: "orange.900"
+                            }} 
                         >
                             Minha conta
                         </Heading>
@@ -46,10 +75,12 @@ export default function Profile() {
                             w="85%"
                         >
                             <Text 
-                                mb={2} 
-                                fontSize="2xl" 
-                                fontWeight="bold" 
-                                color="white"
+                                sx={{
+                                    mb: 2, 
+                                    fontSize: "2xl", 
+                                    fontWeight: "bold", 
+                                    color: "white"
+                                }}
                             >
                                 Nome da barbearia:
                             </Text>
@@ -60,6 +91,8 @@ export default function Profile() {
                                 size="lg" 
                                 type="text" 
                                 mb={3}
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                             />
 
                             <Text 
@@ -73,10 +106,12 @@ export default function Profile() {
                             <Input 
                                 w="100%" 
                                 background="gray.900" 
-                                placeholder="Nome da sua barbearia" 
+                                placeholder="Endereço da sua barbearia" 
                                 size="lg" 
                                 type="text" 
                                 mb={3}
+                                value={endereco}
+                                onChange={(e) => setEndereco(e.target.value)}
                             />
 
                             <Text 
@@ -102,9 +137,9 @@ export default function Profile() {
                                 <Text 
                                     p={2} 
                                     fontSize="lg" 
-                                    color="#4dffb4"
+                                    color={premium ? "#fba931" : "#4dffb4"}
                                 >
-                                    Plano grátis</Text>
+                                    Plano {premium ? "Premium" : "Grátis"}</Text>
                                 <Link href="/planos">
                                     <Box 
                                         cursor="pointer" 
@@ -120,25 +155,30 @@ export default function Profile() {
                                 </Link>
                             </Flex>
                             <Button 
-                                w="100%"
-                                mt={3}
-                                mb={4}
-                                background="button.cta"
-                                size="lg"
-                                _hover={{ bg: '#ffb13e' }}
+                                sx={{
+                                    w: "100%",
+                                    mt: 3,
+                                    mb: 4,
+                                    background: "button.cta",
+                                    size: "lg",
+                                    _hover: {{ bg: '#ffb13e' }}
+                                }}
                             >
                                 Salvar
                             </Button>
 
                             <Button
-                                w="100%"
-                                mb={6}
-                                bg="transparent"
-                                borderWidth={2}
-                                borderColor="red.500"
-                                color="red.500"
-                                size="lg"
-                                _hover={{ bg: 'transparent' }}
+                                sx={{
+                                    w: "100%",
+                                    mb: 6
+                                    bg: "transparent",
+                                    borderWidth: 2,
+                                    borderColor: "red.500",
+                                    color: "red.500",
+                                    size: "lg",
+                                    _hover: {{ bg: 'transparent' }},
+                                    onClick: {hableLogout}
+                                }}
                             >
                                 Sair da conta
                             </Button>
@@ -149,3 +189,33 @@ export default function Profile() {
         </>
     )
 }
+
+export const getServerSideProps = canSRRAuth(async (ctx) => {
+    try {
+        const apiClient = setupApiClient(ctx);
+        const response = await apiClient.get('/me');
+
+        const user = {
+            id: response.data.id,
+            name: response.data.name,
+            email: response.data.email,
+            endereco: response.data?.endereco
+        };
+
+        return {
+            props: {
+                user: user,
+                premium: response.data?.subscriptions?.status === 'active' ? true : false
+            }
+        }
+    }
+    catch(err) {
+        console.log(err);
+        return {
+            redirect: {
+             destination: '/dashboard',
+             permanent: false   
+            }
+        }
+    }
+})
