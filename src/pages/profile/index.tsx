@@ -22,11 +22,28 @@ interface ProfileProps {
 export default function Profile({ user, premium }: ProfileProps) {
     const { logoutUser } = useContext(AuthContext);
 
-    const [name, setName] = useState(user && user?.name);
-    const [endereco, setEndereco] = useState(user && user?.endereco);
+    const [name, setName] = useState<string>(user?.name || '');
+    const [endereco, setEndereco] = useState<string>(user?.endereco || '');
     
-    async function hableLogout() {
+    async function handleLogout() {
         await logoutUser();
+    }
+
+    async function handleUpdateUser() {
+        if(!name) return;
+
+        try {
+            const apiClient = setupApiClient();
+            await apiClient.put('/users', {
+                name: name,
+                endereco: endereco
+            });
+
+            alert("Dados alterados com sucesso.");
+        }
+        catch(err) {
+            console.log(err);
+        }
     }
 
     return (
@@ -84,16 +101,18 @@ export default function Profile({ user, premium }: ProfileProps) {
                             >
                                 Nome da barbearia:
                             </Text>
-                            <Input 
-                                w="100%" 
-                                background="gray.900" 
-                                placeholder="Nome da sua barbearia" 
-                                size="lg" 
-                                type="text" 
-                                mb={3}
+                            <Input
+                                placeholder="Nome da sua barbearia"
+                                size="lg"
+                                type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                            />
+                                sx={{
+                                    w: "100%",
+                                    background: "gray.900",
+                                    mb: 3
+                                }}
+                                />
 
                             <Text 
                                 mb={2} 
@@ -160,9 +179,10 @@ export default function Profile({ user, premium }: ProfileProps) {
                                     mt: 3,
                                     mb: 4,
                                     background: "button.cta",
-                                    size: "lg",
-                                    _hover: {{ bg: '#ffb13e' }}
+                                    size: "lg"
                                 }}
+                                _hover = {{ bg: '#ffb13e' }}
+                                onClick={ handleUpdateUser }
                             >
                                 Salvar
                             </Button>
@@ -170,15 +190,15 @@ export default function Profile({ user, premium }: ProfileProps) {
                             <Button
                                 sx={{
                                     w: "100%",
-                                    mb: 6
+                                    mb: 6,
                                     bg: "transparent",
                                     borderWidth: 2,
                                     borderColor: "red.500",
                                     color: "red.500",
                                     size: "lg",
-                                    _hover: {{ bg: 'transparent' }},
-                                    onClick: {hableLogout}
                                 }}
+                                _hover = {{ bg: 'transparent' }}
+                                onClick = {handleLogout}
                             >
                                 Sair da conta
                             </Button>
