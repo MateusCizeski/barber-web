@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { Sidebar } from '@/components/sidebar';
-import { Flex, Heading, Text, Stack, Switch, useMediaQuery } from '@chakra-ui/react';
+import { Flex, Heading, Text, Stack, Switch, useMediaQuery, Button } from '@chakra-ui/react';
 import { IoMdPricetag } from 'react-icons/io';
 
 export default function Haircuts() {
@@ -30,9 +30,9 @@ export default function Haircuts() {
                     </Flex>
 
                     <Link href="/haircuts/123">
-                        <Flex cursor="pointer" w="100%" p={4} bg="barber.400" direction="row" mb={2} justifyContent="space-between">
+                        <Flex cursor="pointer" w="100%" p={4} bg="barber.400" direction={isMobile ? "column" : "row"} alignItems={isMobile ? "flex-start" : "center"} mb={2} justifyContent="space-between">
 
-                            <Flex direction='row' alignItems="center" justifyContent="center">
+                            <Flex mb={isMobile ? 2 : 0} direction='row' alignItems="center" justifyContent="center">
                                 <IoMdPricetag size={28} color='#fba931'/>
                                 <Text fontWeight="bold" ml={4} noOfLines={2}>Corte completo</Text>
                             </Flex>
