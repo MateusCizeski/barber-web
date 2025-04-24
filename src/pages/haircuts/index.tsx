@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Sidebar } from '@/components/sidebar';
@@ -22,6 +22,33 @@ interface HaircutsProps {
 export default function Haircuts({ haircuts }: HaircutsProps) {
     const [isMobile] = useMediaQuery("(max-width: 500px)");
     const [haircutList, setHaircutList] = useState(haircuts || []);
+    const [disableHaircut, setDisableHaircut] = useState("enabled");
+
+    async function handleDisable(e: ChangeEvent<HTMLInputElement>) {
+        const apiClient = setupApiClient();
+
+        if(e.target.value === 'disabled') {
+            setDisableHaircut('enabled');
+
+            const response = await apiClient.get('/haircuts', {
+                params: {
+                    status: true
+                }
+            });
+
+            setHaircutList(response.data);
+        }else {
+            setDisableHaircut('disabeld');
+
+            const response = await apiClient.get('/haircuts', {
+                params: {
+                    status: false
+                }
+            });
+
+            setHaircutList(response.data);
+        }
+    }
 
     return (
         <>
@@ -39,9 +66,14 @@ export default function Haircuts({ haircuts }: HaircutsProps) {
                             Cadastrar novo
                         </Button>
                     </Link>
-                        <Stack ml="auto" align="center" direction="row">
+                        <Stack sx={{
+                            ml: "auto",
+                            align: "center",
+                            direction: "row"
+                        }}
+                        > 
                             <Text fontWeight="bold">Ativos</Text>
-                            <Switch color="green" size="lg" />
+                            <Switch color="green" size="lg" value={disableHaircut} onChange={(e: ChangeEvent<HTMLInputElement>) => handleDisable(e)} isChecked={disableHaircut === 'disabled' ? false : true} />
                         </Stack>
                     </Flex>
 
