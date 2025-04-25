@@ -1,3 +1,4 @@
+import { useState, ChangeEvent } from "react";
 import Head from "next/head";
 import  {
     Flex,
@@ -35,6 +36,38 @@ interface EditHaircutProps {
 
 export default function EditHaircut({ haircut, subscription }: EditHaircutProps) {
     const [isMobile] = useMediaQuery("(max-width: 500px)");
+    const [name, setName] = useState(haircut?.name);
+    const [price, setPrice] = useState(haircut?.price);
+    const [status, setStatus] = useState(haircut?.status);
+    const [disabledHaircut, setDisabledHaircut] = useState(haircut?.status ? "disabled" : "enabled");
+
+    function handleChangeStatus(e: ChangeEvent<HTMLInputElement>) {
+        if(e.target.value === 'disabled') {
+            setDisabledHaircut('enable');
+            setStatus(false);
+        }else {
+            setDisabledHaircut('disabled');
+            setStatus(true);
+        }
+    }
+
+    async function handleUpdate() {
+        if(!name || !price) return;
+
+        try {
+            const apiClient = setupApiClient();
+            await apiClient.put('/haorcut', {
+                name,
+                price,
+                status,
+                haircut_id: haircut?.id
+            });
+        }
+        catch(err) {
+            console.log(err)
+        }
+    }
+
     return (
         <>
             <Head>
@@ -85,6 +118,8 @@ export default function EditHaircut({ haircut, subscription }: EditHaircutProps)
                                     type: "text",
                                     w: '100%'
                                 }}
+                                value={name}
+                                onChange={ (e) => setName(e.target.value) }
                             />
 
                             <Input 
@@ -96,6 +131,8 @@ export default function EditHaircut({ haircut, subscription }: EditHaircutProps)
                                     type: "number",
                                     w: '100%'
                                 }}
+                                value={price}
+                                onChange={ (e) => setPrice(e.target.value) }
                             />
 
                             <Stack 
@@ -107,10 +144,24 @@ export default function EditHaircut({ haircut, subscription }: EditHaircutProps)
                             >
                                 <Text sx={{ fontWeight: 'bold' }} >Desativar corte</Text>
 
-                                <Switch sx={{ size: 'lg', colorScheme: "red" }} />
+                                <Switch 
+                                    sx={{ size: 'lg', colorScheme: "red" }} 
+                                    value={disabledHaircut} 
+                                    isChecked={disabledHaircut === 'disabled' ? false : true}
+                                    onChange={ (e: ChangeEvent<HTMLInputElement>) => handleChangeStatus(e) }
+                                />
+
                             </Stack>
 
-                            <Button mb={6} w={'100%'} bg={'button.cta'} color={'gray.900'} _hover={{ bg: "#ffb13e" }} disabled={subscription?.status !== 'active'}>
+                            <Button 
+                                mb={6} 
+                                w={'100%'} 
+                                bg={'button.cta'} 
+                                color={'gray.900'} 
+                                _hover={{ bg: "#ffb13e" }} 
+                                disabled={subscription?.status !== 'active'} 
+                                onClick={handleUpdate}
+                            >
                                 Salvar
                             </Button>
 
