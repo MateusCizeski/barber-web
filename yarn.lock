@@ -2,6 +2,66 @@
 # yarn lockfile v1
 
 
+"@ark-ui/react@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@ark-ui/react/-/react-5.5.0.tgz"
+  integrity sha512-zLERNKOrf77K0OMOLoo5+jZQn9uXxYck56gBzx/zhW2SjFe0M2lE6VyaIiwgKGIqbGre59gD9/tyTsqO6bqARQ==
+  dependencies:
+    "@internationalized/date" "3.7.0"
+    "@zag-js/accordion" "1.8.2"
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/auto-resize" "1.8.2"
+    "@zag-js/avatar" "1.8.2"
+    "@zag-js/carousel" "1.8.2"
+    "@zag-js/checkbox" "1.8.2"
+    "@zag-js/clipboard" "1.8.2"
+    "@zag-js/collapsible" "1.8.2"
+    "@zag-js/collection" "1.8.2"
+    "@zag-js/color-picker" "1.8.2"
+    "@zag-js/color-utils" "1.8.2"
+    "@zag-js/combobox" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/date-picker" "1.8.2"
+    "@zag-js/date-utils" "1.8.2"
+    "@zag-js/dialog" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/editable" "1.8.2"
+    "@zag-js/file-upload" "1.8.2"
+    "@zag-js/file-utils" "1.8.1"
+    "@zag-js/focus-trap" "1.8.2"
+    "@zag-js/highlight-word" "1.8.2"
+    "@zag-js/hover-card" "1.8.2"
+    "@zag-js/i18n-utils" "1.8.2"
+    "@zag-js/menu" "1.8.2"
+    "@zag-js/number-input" "1.8.2"
+    "@zag-js/pagination" "1.8.2"
+    "@zag-js/pin-input" "1.8.2"
+    "@zag-js/popover" "1.8.2"
+    "@zag-js/presence" "1.8.2"
+    "@zag-js/progress" "1.8.2"
+    "@zag-js/qr-code" "1.8.2"
+    "@zag-js/radio-group" "1.8.2"
+    "@zag-js/rating-group" "1.8.2"
+    "@zag-js/react" "1.8.2"
+    "@zag-js/select" "1.8.2"
+    "@zag-js/signature-pad" "1.8.2"
+    "@zag-js/slider" "1.8.2"
+    "@zag-js/splitter" "1.8.2"
+    "@zag-js/steps" "1.8.2"
+    "@zag-js/switch" "1.8.2"
+    "@zag-js/tabs" "1.8.2"
+    "@zag-js/tags-input" "1.8.2"
+    "@zag-js/time-picker" "1.8.2"
+    "@zag-js/timer" "1.8.2"
+    "@zag-js/toast" "1.8.2"
+    "@zag-js/toggle" "1.8.2"
+    "@zag-js/toggle-group" "1.8.2"
+    "@zag-js/tooltip" "1.8.2"
+    "@zag-js/tour" "1.8.2"
+    "@zag-js/tree-view" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.26.2":
   version "7.26.2"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz"
@@ -47,7 +107,7 @@
   dependencies:
     "@babel/types" "^7.26.9"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3":
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3":
   version "7.26.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.26.9.tgz"
   integrity sha512-aA63XwOkcl4xxQa3HjPMqOP6LiK0ZDv3mUPYEFXkpHbaFjtGggE1A61FjFzJnB+p7/oy2gA8E+rcBNl/zC1tMg==
@@ -84,569 +144,19 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@chakra-ui/accordion@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/accordion/-/accordion-2.0.5.tgz"
-  integrity sha512-Nel+vznSeRU/qbH+27EFA5terr2rokdKIzx4u4f9fd0ui2oO7VihvBVa+qSy8V2D/i2tYYZ1HlwIqjjLsmxpSA==
+"@chakra-ui/react@^3.16.1":
+  version "3.16.1"
+  resolved "https://registry.npmjs.org/@chakra-ui/react/-/react-3.16.1.tgz"
+  integrity sha512-LOfPrI2L2JdFo1tt/7C+WLJj8NCyZMviWhaRPIY5/oirmvhMuGF+xUTtR+6iKUBk0QcH2ZRsDHbuhtAxCoco0w==
   dependencies:
-    "@chakra-ui/descendant" "3.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/transition" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/alert@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/alert/-/alert-2.0.3.tgz"
-  integrity sha512-HNT3b82Ps50u6ws0CvZ6Oad75pqeVvzVwZK6D3cItKn87Y6DNr0exjViIO6+kEJV4ANBeFAQ8i9+mI+xg/DcQQ==
-  dependencies:
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/spinner" "^2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/anatomy@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/anatomy/-/anatomy-2.0.1.tgz"
-  integrity sha512-lbOUfPmCtgIe0G7Iu6C2MaFP3FKOHgKWxDrYc3498TQ7/z5N1r7AO6jB+gFRGDbxJNLjRGOLG7tV0bufagGTUw==
-  dependencies:
-    "@chakra-ui/theme-tools" "^2.0.2"
-
-"@chakra-ui/avatar@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/avatar/-/avatar-2.0.4.tgz"
-  integrity sha512-X550zyamefZ5N4oEU5968sLJsVozFcsxla08pa88pc1PPM/4ZXjbqbJQ92aRnbg3z4O+mBOvPzOeQuhx/VTV0g==
-  dependencies:
-    "@chakra-ui/image" "2.0.4"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/breadcrumb@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/breadcrumb/-/breadcrumb-2.0.3.tgz"
-  integrity sha512-GXsAw8uB2OHu8wKjgSUehUhgtn35KCg2uHbM/YfZfIV+yPD20qQlDLU2gm+C6vQlnAtpQb9N1DHWQC9j7jUwmQ==
-  dependencies:
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/button@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/button/-/button-2.0.3.tgz"
-  integrity sha512-nzF/ex9YDoGKclRIyzfHKb12dczdBL1k/O4t+VurSqI+2GsuLndENNx7ipBG3mtwu3ZqXPO2pku3jnUFS6kHSg==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/spinner" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/checkbox@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@chakra-ui/checkbox/-/checkbox-2.1.2.tgz"
-  integrity sha512-wZSSqhoxDy8E9oBS4w3RW5aalXQCry57jEbaV02EV8zvsNWCPX63o0x8/eQuj49t69m5a3bclaz/nyoQ7NbdeQ==
-  dependencies:
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-    "@zag-js/focus-visible" "0.1.0"
-
-"@chakra-ui/clickable@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/clickable/-/clickable-2.0.3.tgz"
-  integrity sha512-nIcvw1wjrTZXF5vcuWHBVKJEEfTeh0DkSb1kAjJrhO4v5PCOpgSfcbwkm59YNFVzzKEuN9AV6LuLC9RQORLa2w==
-  dependencies:
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/close-button@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/close-button/-/close-button-2.0.3.tgz"
-  integrity sha512-RZ8ydN6N6oPab54hG3WdjwkDt6kyo2+DvW/ZV8gsHMVFkw5VXDhEBZsFnM3VRYnB61/YgmUIZG8bFJwylDLauw==
-  dependencies:
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/color-mode@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/color-mode/-/color-mode-2.1.1.tgz"
-  integrity sha512-TO5qwtOZjvqWcZY8/L1wfGJbK5MXPuXQ2rBsfVna4iEFYCzkRhYBDv9KI04tP6blE4NGEYzcrTGbgLzmc5bP0Q==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/control-box@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/control-box/-/control-box-2.0.3.tgz"
-  integrity sha512-GYEutpWsfRZ8kfAubeFmHBwkqGt91anejpoK/CtgH32r+34sIV2h1RXnMYwzGbwEt2W5JGeCFZ4f+MbNWpt7EA==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/counter@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/counter/-/counter-2.0.3.tgz"
-  integrity sha512-xlIigRju0ghznBRqdlMk+CWxdBOwWgnvEg5F4YI1uG47pvF7gEEy4yXBUgGAHQkmyGDxzkj8Pgcw2xUqU0Cqcw==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/css-reset@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/css-reset/-/css-reset-2.0.1.tgz"
-  integrity sha512-8RhAC7l5RHp9hNDN2M2feZ2wPaoSrgxzqx6VqLTIul2lwucpp1LTlrDlPCBMJe8fp51Q83IOCW4882ktsXxktA==
-
-"@chakra-ui/descendant@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/descendant/-/descendant-3.0.3.tgz"
-  integrity sha512-uI0B5BO7khb22UWE42W7n3oGjxQkdJl+H5lhX58lAOAjbNsbmd8XbIVXTO/Kb7LvS3sPimkyG8nRC9A1epq4tw==
-  dependencies:
-    "@chakra-ui/react-utils" "^2.0.1"
-
-"@chakra-ui/editable@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/editable/-/editable-2.0.3.tgz"
-  integrity sha512-AVirh0HuL9CMBKVqTOh04y1X33/xVuMat+L8fpoXd6Yfrp1h/BTtmjHp+Jv15kp3pQ2+hMe4fKQsnkvwx2VHxA==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/focus-lock@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/focus-lock/-/focus-lock-2.0.4.tgz"
-  integrity sha512-+zBlyIy8XEd90UAnLWfvbnZMOsUgmqWmopTdw44QJZKx9BF9H+IQP4VMHc/zF29Bk87AXpMJQbhA24Fd86wmhw==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-    react-focus-lock "^2.9.1"
-
-"@chakra-ui/form-control@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/form-control/-/form-control-2.0.3.tgz"
-  integrity sha512-WXW0re6oX5T7nhdUmcR/lcEVJgRetKY50LA9TRskOM34I1v2SwdE1/WC21qcbtstlIKWdzL3q0UA+XSV6p9Tmg==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/hooks@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/hooks/-/hooks-2.0.3.tgz"
-  integrity sha512-B5s9F4kk9ApaC9Owi82BtMUaPS0gj6ITv0uw4FPe8+N4WripTcLZUtikQnSsxgifVT6n1BKNmZv8lHuJaeG+iw==
-  dependencies:
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-    compute-scroll-into-view "1.0.14"
-    copy-to-clipboard "3.3.1"
-
-"@chakra-ui/icon@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/icon/-/icon-3.0.3.tgz"
-  integrity sha512-9gNDrWtD/O0lSsqaXh3Fr4LM23ZgatSLp8bFU2oJLxbkxLa7LCpldeO622nk01MRp/kgatr6gGjuzvtRpClmuA==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/image@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/image/-/image-2.0.4.tgz"
-  integrity sha512-8QfGSJRCnQbG8fPqQ6r1/KyGDRMfY3VzXMxFEN/AiBDz5QK03aDzkbNvTRnCLPOA5JIOpD3Ozo44EVnWfPA5lg==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/input@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/input/-/input-2.0.3.tgz"
-  integrity sha512-qQ7zlY/rFHk69SE3jlFSRfzaQquzDDhb/JMIkGWBoSn2DyWUpx3c5P8LtL0KDb0enlcqxiR/E9swHnSv7P704A==
-  dependencies:
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/layout@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@chakra-ui/layout/-/layout-2.1.0.tgz"
-  integrity sha512-BFenfUEc8RcKLqZxXFf9DVs8LrDHYrVODuzVyPTXhJxgrnmgDncXneC9+HQNu1jsSReJuwU/ilPhwE0shH+/KQ==
-  dependencies:
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/live-region@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/live-region/-/live-region-2.0.3.tgz"
-  integrity sha512-bFESKucdmrxhIS8kYIPiPdh1pfTOAtxbv1LN2SiDliZju1jWknCXT7nUsVUBJpZ7moWJd2onBYDCqzpU2KOZjQ==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/media-query@3.1.2":
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/@chakra-ui/media-query/-/media-query-3.1.2.tgz"
-  integrity sha512-p2/h3V7jwLKw+4Gi3rQtIAuybdqaWMynWFdBBux3jYd2qfbWkvE1hboOW7q9jHifMZkfMztZ6/J0l29kKJSwKw==
-  dependencies:
-    "@chakra-ui/react-env" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/menu@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/menu/-/menu-2.0.5.tgz"
-  integrity sha512-cy8VsssOYSjUsMsjau9ErEX3CaOSt8mF650a98GRd6DFUAmnoAcJDfdxJzClKDqJ6D6HnE9J7x9zEnwUpFDI5A==
-  dependencies:
-    "@chakra-ui/clickable" "2.0.3"
-    "@chakra-ui/descendant" "3.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/popper" "3.0.2"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/transition" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/modal@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/modal/-/modal-2.1.1.tgz"
-  integrity sha512-ZbgOCJBaSoNYukSNcWb9HAIDuAAMDjsN3KTTWBFooBu2/Qoiy72WP0JNnQiRCRGjTEklPi5gxvBuyrseqmwWTw==
-  dependencies:
-    "@chakra-ui/close-button" "2.0.3"
-    "@chakra-ui/focus-lock" "2.0.4"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/portal" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/transition" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-    aria-hidden "^1.1.1"
-    react-remove-scroll "^2.5.4"
-
-"@chakra-ui/number-input@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/number-input/-/number-input-2.0.3.tgz"
-  integrity sha512-ac+wR6s//6OFQVYEeUjZ9sZpeJ58sGJEeQ+VnQAezcwwRLaUQg+CiOpi0U40lDW7WL4bo18AvdgsoEkZr30idQ==
-  dependencies:
-    "@chakra-ui/counter" "2.0.3"
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/pin-input@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/pin-input/-/pin-input-2.0.5.tgz"
-  integrity sha512-RdId1MkHhj+S3n6oU+2ZAZgp/Lj7TEUB3Xo9xGE8dJMtQg9GwuZ7BOx2SDCRZw+Crxe1+EtT1ononou9SouXGg==
-  dependencies:
-    "@chakra-ui/descendant" "3.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/popover@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/popover/-/popover-2.0.3.tgz"
-  integrity sha512-i095TIF2oG8zYS69/4GaVmYWVfOaqJ0JJDYI4OYK2AkZlevKkWjp8eITfbG0V2Qf5hcdOl67zryLlC/yQr7g3w==
-  dependencies:
-    "@chakra-ui/close-button" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/popper" "3.0.2"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/popper@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npmjs.org/@chakra-ui/popper/-/popper-3.0.2.tgz"
-  integrity sha512-oEUsaFR4EPY3CvhEVeZNoa+mA/w+TvLlG3xlicIwv/3Fcfl6LD2Jhr6utnqAvHFxE/qRcUcXLX20ovy0Zrgm/Q==
-  dependencies:
-    "@chakra-ui/react-utils" "2.0.1"
-    "@popperjs/core" "^2.9.3"
-
-"@chakra-ui/portal@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/portal/-/portal-2.0.3.tgz"
-  integrity sha512-iRDpvdk+sRspkRkeVSdLOeOXiF4L3ZOaRnBFtyFJrRH8/YmBwQjoVapinEVjdHGG34nB8/vwybJY9LmMa9Er3A==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/progress@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/progress/-/progress-2.0.4.tgz"
-  integrity sha512-ItIfXCd3h7yhfxygQUvDoFx8qCNBTInAQNgWcsvva9JQSO5zZj/4yPm5y+TPYaw7W1VdXP35vF02lgnIbWgiMw==
-  dependencies:
-    "@chakra-ui/theme-tools" "2.0.4"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/provider@2.0.8":
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/@chakra-ui/provider/-/provider-2.0.8.tgz"
-  integrity sha512-xKemPCWaD0ruLPxs9vG4D697Ysc3gl0+L2Df+RWaTNelhfdi8u6V8Wqw1SMeBX7XpkqT74Nixc9aU53lFZFiiA==
-  dependencies:
-    "@chakra-ui/css-reset" "2.0.1"
-    "@chakra-ui/portal" "2.0.3"
-    "@chakra-ui/react-env" "2.0.3"
-    "@chakra-ui/system" "2.2.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/radio@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/radio/-/radio-2.0.4.tgz"
-  integrity sha512-1PVg0ObkcW4qoV0ePdJKR8Yf5UTKWdw0CRhGIOjZbjNRtOhhRWZRLtcIFJ4AHWrW0Inxu4rgS4NrmBbDuohIYQ==
-  dependencies:
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-    "@zag-js/focus-visible" "0.1.0"
-
-"@chakra-ui/react-env@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/react-env/-/react-env-2.0.3.tgz"
-  integrity sha512-22NdubgHquq4aJ6fklVg46jLVgpM7mbktHMYKTgXzOzHKunheo2eEioGq1MVIPLAQfOtEDFoYcbHo+uWXFMMBw==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/react-utils@2.0.1", "@chakra-ui/react-utils@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/react-utils/-/react-utils-2.0.1.tgz"
-  integrity sha512-xLiTn7WeUo2e3zvo8zUGpICgIGsLCPpkVbjEKhr1jAV41urqEtwlLc6uGir595OYqAC8zFDqs4HXhHouqNEtiw==
-  dependencies:
-    "@chakra-ui/utils" "^2.0.2"
-
-"@chakra-ui/react@2.2.3":
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/react/-/react-2.2.3.tgz"
-  integrity sha512-3M7027v2hgrzWq1EHd2QobSzkSdlbWblFNh7Bt+yHjM3Opk6kdQc3/72denLsan5SRwlfwDzULGY/HVUghzclw==
-  dependencies:
-    "@chakra-ui/accordion" "2.0.5"
-    "@chakra-ui/alert" "2.0.3"
-    "@chakra-ui/avatar" "2.0.4"
-    "@chakra-ui/breadcrumb" "2.0.3"
-    "@chakra-ui/button" "2.0.3"
-    "@chakra-ui/checkbox" "2.1.2"
-    "@chakra-ui/close-button" "2.0.3"
-    "@chakra-ui/control-box" "2.0.3"
-    "@chakra-ui/counter" "2.0.3"
-    "@chakra-ui/css-reset" "2.0.1"
-    "@chakra-ui/editable" "2.0.3"
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/image" "2.0.4"
-    "@chakra-ui/input" "2.0.3"
-    "@chakra-ui/layout" "2.1.0"
-    "@chakra-ui/live-region" "2.0.3"
-    "@chakra-ui/media-query" "3.1.2"
-    "@chakra-ui/menu" "2.0.5"
-    "@chakra-ui/modal" "2.1.1"
-    "@chakra-ui/number-input" "2.0.3"
-    "@chakra-ui/pin-input" "2.0.5"
-    "@chakra-ui/popover" "2.0.3"
-    "@chakra-ui/popper" "3.0.2"
-    "@chakra-ui/portal" "2.0.3"
-    "@chakra-ui/progress" "2.0.4"
-    "@chakra-ui/provider" "2.0.8"
-    "@chakra-ui/radio" "2.0.4"
-    "@chakra-ui/react-env" "2.0.3"
-    "@chakra-ui/select" "2.0.3"
-    "@chakra-ui/skeleton" "2.0.8"
-    "@chakra-ui/slider" "2.0.3"
-    "@chakra-ui/spinner" "2.0.3"
-    "@chakra-ui/stat" "2.0.3"
-    "@chakra-ui/switch" "2.0.5"
-    "@chakra-ui/system" "2.2.1"
-    "@chakra-ui/table" "2.0.3"
-    "@chakra-ui/tabs" "2.0.5"
-    "@chakra-ui/tag" "2.0.3"
-    "@chakra-ui/textarea" "2.0.4"
-    "@chakra-ui/theme" "2.1.2"
-    "@chakra-ui/toast" "3.0.1"
-    "@chakra-ui/tooltip" "2.0.4"
-    "@chakra-ui/transition" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-
-"@chakra-ui/select@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/select/-/select-2.0.3.tgz"
-  integrity sha512-RC08asS3c4Fn46kNQZa9HEmEy4vr+rqkKoXTs/BxEUFsTy7dArwbtYKdNU+aDg/eDa6P0a2MVnesgsHk4r7GUA==
-  dependencies:
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/skeleton@2.0.8":
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/@chakra-ui/skeleton/-/skeleton-2.0.8.tgz"
-  integrity sha512-yDdmsN2VigQeRkqmRC3D91N9OWjrFq6sMr/NtDVxsNF9SAwqMp253QaNKSE5VydfbCqOJbLQWan11dDVMClw2w==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/media-query" "3.1.2"
-    "@chakra-ui/system" "2.2.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/slider@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/slider/-/slider-2.0.3.tgz"
-  integrity sha512-w3w4e7iDHsYmw2BqtsWNW/8pt+S8zW92FW6iOHJNMFrcGrzo/0whUXwE/q+LO72uah5EyXqCEjv4YcOMfaHatw==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/spinner@2.0.3", "@chakra-ui/spinner@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/spinner/-/spinner-2.0.3.tgz"
-  integrity sha512-GjQyNf/H+NSVG4JjPrs6JCHhdhB0Oa72M3LnXMTwjU3LqJzDwmH2HCXsSvfZm8zkhme+JBKgB2TB25HcH9Eorg==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-
-"@chakra-ui/stat@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/stat/-/stat-2.0.3.tgz"
-  integrity sha512-L5WoRUbHX3w1AYlVsIakCWHGjLytiHrqUkK1gdTCAwadNl+c8aNgjb3YcHv3WXt2xm7xLcvfDu5FD3/mjc30kA==
-  dependencies:
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-
-"@chakra-ui/styled-system@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.npmjs.org/@chakra-ui/styled-system/-/styled-system-2.2.2.tgz"
-  integrity sha512-p96o4rqSh8z6VLC26bJe8HkFoX+gqUqCe+Uhq38/Y1kmpnRyehcLQ2akcPsVCIVwYvtwh930hVRnaUBR1fmaoQ==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-    csstype "^3.0.11"
-
-"@chakra-ui/switch@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/switch/-/switch-2.0.5.tgz"
-  integrity sha512-i4y2avngR2/H9ce9u8x8zOYTZZm2DpJ3mZrXF4aLPwEpc4c15AI258hjHN19uy3399leZ07DZK3eNpvjfjt9Cw==
-  dependencies:
-    "@chakra-ui/checkbox" "2.1.2"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/system@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/system/-/system-2.2.1.tgz"
-  integrity sha512-IIBK3Zk3YrXm+o1XiAJLLwfVu7bUIoY8mUTduTjiwIk7FeAKqa3FUOPhC9YFW30+MdEvWXX85Bn1pt+wh4na0A==
-  dependencies:
-    "@chakra-ui/color-mode" "2.1.1"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/styled-system" "2.2.2"
-    "@chakra-ui/utils" "2.0.3"
-    react-fast-compare "3.2.0"
-
-"@chakra-ui/table@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/table/-/table-2.0.3.tgz"
-  integrity sha512-EopchqhnxhGMo2OJfMWgQZyl+zfJ5dPpAfMXVbeiCec/M4syMbHNmQEFag8QSRA5aNYXoLqUQAi8OrLXKeMylg==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/tabs@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/@chakra-ui/tabs/-/tabs-2.0.5.tgz"
-  integrity sha512-wAAHC2HY6KfXv+Nh7NHFL5BfQkva9QtOszUs8FQx7qmU0grIzdI2e1+6fehbfm6G3q59NyVI9SoSnwG51k6rXw==
-  dependencies:
-    "@chakra-ui/clickable" "2.0.3"
-    "@chakra-ui/descendant" "3.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/tag@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/tag/-/tag-2.0.3.tgz"
-  integrity sha512-s5ZsoHu6g7SiXSFpK4ON5GFzOwyQ2tzfpr+jRV6KeMoBvJO7j5IXHcS19o0eBtcIn/Q+g0lWuqqubVrGH16cjQ==
-  dependencies:
-    "@chakra-ui/icon" "3.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/textarea@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/textarea/-/textarea-2.0.4.tgz"
-  integrity sha512-P0/Q2PYqZ4RvA4m8wptMNXQGICyZGfU7Q/CIKm1yuZ7b7EPVjfj1AcDYdNyqBCm4ckUQBV3tmtT9wAPx7M4YAA==
-  dependencies:
-    "@chakra-ui/form-control" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/theme-tools@2.0.4", "@chakra-ui/theme-tools@^2.0.2":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/theme-tools/-/theme-tools-2.0.4.tgz"
-  integrity sha512-jQaSPC4/dgg8pLbmfdnBdOgd2xO9ihRzNP+iNaBwlVIwS4cS6QVt8EqjfNNeMyehiEjHFn2qmeFESQe6z8WiAg==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-    "@ctrl/tinycolor" "^3.4.0"
-
-"@chakra-ui/theme@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@chakra-ui/theme/-/theme-2.1.2.tgz"
-  integrity sha512-D94mFtTyl6kAm3h91X7oFrTsjKE1IxSJaB4WuD7nxlaUeMbAqIiD1kgZ7EdEZCfj5BxcMA/X+7eQC8ahbqY6ng==
-  dependencies:
-    "@chakra-ui/anatomy" "2.0.1"
-    "@chakra-ui/theme-tools" "2.0.4"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/toast@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/toast/-/toast-3.0.1.tgz"
-  integrity sha512-HTZ0jtSY6Qid9+TAle5aYwpe0cHy9CPB8bImgaH6H8KwLafSOw8Nf8Wo/FXsWLlxL5AlRZ+TFth7EI4xOT92Zw==
-  dependencies:
-    "@chakra-ui/alert" "2.0.3"
-    "@chakra-ui/close-button" "2.0.3"
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/portal" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/theme" "2.1.2"
-    "@chakra-ui/transition" "2.0.3"
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/tooltip@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@chakra-ui/tooltip/-/tooltip-2.0.4.tgz"
-  integrity sha512-UwE8au26UeyyWxdNsFs7aUSG0GTanDGhhJALdnsrz2kp/65E/lwogphdUxSAIWXCYfO+kYJJETHx/mUvqlUAuA==
-  dependencies:
-    "@chakra-ui/hooks" "2.0.3"
-    "@chakra-ui/popper" "3.0.2"
-    "@chakra-ui/portal" "2.0.3"
-    "@chakra-ui/react-utils" "2.0.1"
-    "@chakra-ui/utils" "2.0.3"
-    "@chakra-ui/visually-hidden" "2.0.3"
-
-"@chakra-ui/transition@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/transition/-/transition-2.0.3.tgz"
-  integrity sha512-RvYPmvnsikgQu0V62AzpMglegs9zi+erWnpcwCmqSAuaqEsj1TfgtQj8PmVJpK5ef9jaAb3YOxk1zPBsWpREIg==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@chakra-ui/utils@2.0.3", "@chakra-ui/utils@^2.0.2":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/utils/-/utils-2.0.3.tgz"
-  integrity sha512-BEGENnswWMc58fixsmdxRrnrbYZSrrDsTuFcvh+A4sfrbVbVfMQNJBSV46LT0Z4roMZ10Pi5/brlLH1+22gGQw==
-  dependencies:
-    "@types/lodash.mergewith" "4.6.6"
-    css-box-model "1.2.1"
-    framesync "5.3.0"
-    lodash.mergewith "4.6.2"
-
-"@chakra-ui/visually-hidden@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@chakra-ui/visually-hidden/-/visually-hidden-2.0.3.tgz"
-  integrity sha512-jqqawkrGs0CTViAo2Ul3Ie7615CFYgXPQ/QRNtBzZnL116anoooj+iu5ulESG9wElX3jaRcVJTB6dedxZWX2GQ==
-  dependencies:
-    "@chakra-ui/utils" "2.0.3"
-
-"@ctrl/tinycolor@^3.4.0":
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz"
-  integrity sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==
-
-"@emnapi/runtime@^1.2.0":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.3.1.tgz#0fcaa575afc31f455fd33534c19381cfce6c6f60"
-  integrity sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==
-  dependencies:
-    tslib "^2.4.0"
+    "@ark-ui/react" "5.5.0"
+    "@emotion/is-prop-valid" "1.3.1"
+    "@emotion/serialize" "1.3.3"
+    "@emotion/use-insertion-effect-with-fallbacks" "1.2.0"
+    "@emotion/utils" "1.4.2"
+    "@pandacss/is-valid-prop" "0.41.0"
+    csstype "3.1.3"
+    fast-safe-stringify "2.1.1"
 
 "@emotion/babel-plugin@^11.13.5":
   version "11.13.5"
@@ -681,7 +191,7 @@
   resolved "https://registry.npmjs.org/@emotion/hash/-/hash-0.9.2.tgz"
   integrity sha512-MyqliTZGuOm3+5ZRSaaBGP3USLw6+EGykkwZns2EPC5g8jJ4z9OrdZY9apkl3+UP9+sdz76YYkwCKP5gh8iY3g==
 
-"@emotion/is-prop-valid@^1.3.0":
+"@emotion/is-prop-valid@*", "@emotion/is-prop-valid@^1.3.0", "@emotion/is-prop-valid@1.3.1":
   version "1.3.1"
   resolved "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-1.3.1.tgz"
   integrity sha512-/ACwoqx7XQi9knQs/G0qKvv5teDMhD7bXYns9N/wM8ah8iNb8jZ2uNO0YOgiq2o2poIvVtJS2YALasQuMSQ7Kw==
@@ -693,7 +203,7 @@
   resolved "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.9.0.tgz"
   integrity sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ==
 
-"@emotion/react@^11.14.0":
+"@emotion/react@^11.0.0-rc.0", "@emotion/react@^11.14.0", "@emotion/react@>=11":
   version "11.14.0"
   resolved "https://registry.npmjs.org/@emotion/react/-/react-11.14.0.tgz"
   integrity sha512-O000MLDBDdk/EohJPFUqvnp4qnHeYkVP5B0xEG0D/L7cOKP9kefu2DXn8dj74cQfsEzUqh+sr1RzFqiL1o+PpA==
@@ -707,7 +217,7 @@
     "@emotion/weak-memoize" "^0.4.0"
     hoist-non-react-statics "^3.3.1"
 
-"@emotion/serialize@^1.3.3":
+"@emotion/serialize@^1.3.3", "@emotion/serialize@1.3.3":
   version "1.3.3"
   resolved "https://registry.npmjs.org/@emotion/serialize/-/serialize-1.3.3.tgz"
   integrity sha512-EISGqt7sSNWHGI76hC7x1CksiXPahbxEOrC5RjmFRJTqLyEK9/9hZvBbiYn70dw4wuwMKiEMCUlR6ZXTSWQqxA==
@@ -740,12 +250,12 @@
   resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.10.0.tgz"
   integrity sha512-dFoMUuQA20zvtVTuxZww6OHoJYgrzfKM1t52mVySDJnMSEa08ruEvdYQbhvyu6soU+NeLVd3yKfTfT0NeV6qGg==
 
-"@emotion/use-insertion-effect-with-fallbacks@^1.2.0":
+"@emotion/use-insertion-effect-with-fallbacks@^1.2.0", "@emotion/use-insertion-effect-with-fallbacks@1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@emotion/use-insertion-effect-with-fallbacks/-/use-insertion-effect-with-fallbacks-1.2.0.tgz"
   integrity sha512-yJMtVdH59sxi/aVJBpk9FQq+OR8ll5GT8oWd57UpeaKEVGab41JWaCFA7FRLoMLloOZF/c/wsPoe+bfGmRKgDg==
 
-"@emotion/utils@^1.4.2":
+"@emotion/utils@^1.4.2", "@emotion/utils@1.4.2":
   version "1.4.2"
   resolved "https://registry.npmjs.org/@emotion/utils/-/utils-1.4.2.tgz"
   integrity sha512-3vLclRofFziIa3J2wDh9jjbkUz9qk5Vi3IZ/FSTKViB0k+ef0fPV7dYrUIugbgupYDx7v9ud/SjrtEP8Y4xLoA==
@@ -823,6 +333,26 @@
     "@eslint/core" "^0.10.0"
     levn "^0.4.1"
 
+"@floating-ui/core@^1.6.0":
+  version "1.6.9"
+  resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.6.9.tgz"
+  integrity sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==
+  dependencies:
+    "@floating-ui/utils" "^0.2.9"
+
+"@floating-ui/dom@1.6.13":
+  version "1.6.13"
+  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.6.13.tgz"
+  integrity sha512-umqzocjDgNRGTuO7Q8CU32dkHkECqI8ZdMZ5Swb6QAM0t5rnlrN3lGo1hdpscRd3WS8T6DKYK4ephgIH9iRh3w==
+  dependencies:
+    "@floating-ui/core" "^1.6.0"
+    "@floating-ui/utils" "^0.2.9"
+
+"@floating-ui/utils@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.9.tgz"
+  integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz"
@@ -851,118 +381,24 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.1.tgz"
   integrity sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==
 
-"@img/sharp-darwin-arm64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.5.tgz#ef5b5a07862805f1e8145a377c8ba6e98813ca08"
-  integrity sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==
-  optionalDependencies:
-    "@img/sharp-libvips-darwin-arm64" "1.0.4"
-
-"@img/sharp-darwin-x64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz#e03d3451cd9e664faa72948cc70a403ea4063d61"
-  integrity sha512-fyHac4jIc1ANYGRDxtiqelIbdWkIuQaI84Mv45KvGRRxSAa7o7d1ZKAOBaYbnepLC1WqxfpimdeWfvqqSGwR2Q==
-  optionalDependencies:
-    "@img/sharp-libvips-darwin-x64" "1.0.4"
-
-"@img/sharp-libvips-darwin-arm64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.0.4.tgz#447c5026700c01a993c7804eb8af5f6e9868c07f"
-  integrity sha512-XblONe153h0O2zuFfTAbQYAX2JhYmDHeWikp1LM9Hul9gVPjFY427k6dFEcOL72O01QxQsWi761svJ/ev9xEDg==
-
-"@img/sharp-libvips-darwin-x64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz#e0456f8f7c623f9dbfbdc77383caa72281d86062"
-  integrity sha512-xnGR8YuZYfJGmWPvmlunFaWJsb9T/AO2ykoP3Fz/0X5XV2aoYBPkX6xqCQvUTKKiLddarLaxpzNe+b1hjeWHAQ==
-
-"@img/sharp-libvips-linux-arm64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.0.4.tgz#979b1c66c9a91f7ff2893556ef267f90ebe51704"
-  integrity sha512-9B+taZ8DlyyqzZQnoeIvDVR/2F4EbMepXMc/NdVbkzsJbzkUjhXv/70GQJ7tdLA4YJgNP25zukcxpX2/SueNrA==
-
-"@img/sharp-libvips-linux-arm@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.0.5.tgz#99f922d4e15216ec205dcb6891b721bfd2884197"
-  integrity sha512-gvcC4ACAOPRNATg/ov8/MnbxFDJqf/pDePbBnuBDcjsI8PssmjoKMAz4LtLaVi+OnSb5FK/yIOamqDwGmXW32g==
-
-"@img/sharp-libvips-linux-s390x@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.0.4.tgz#f8a5eb1f374a082f72b3f45e2fb25b8118a8a5ce"
-  integrity sha512-u7Wz6ntiSSgGSGcjZ55im6uvTrOxSIS8/dgoVMoiGE9I6JAfU50yH5BoDlYA1tcuGS7g/QNtetJnxA6QEsCVTA==
-
-"@img/sharp-libvips-linux-x64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.0.4.tgz#d4c4619cdd157774906e15770ee119931c7ef5e0"
-  integrity sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==
-
-"@img/sharp-libvips-linuxmusl-arm64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.0.4.tgz#166778da0f48dd2bded1fa3033cee6b588f0d5d5"
-  integrity sha512-9Ti+BbTYDcsbp4wfYib8Ctm1ilkugkA/uscUn6UXK1ldpC1JjiXbLfFZtRlBhjPZ5o1NCLiDbg8fhUPKStHoTA==
-
-"@img/sharp-libvips-linuxmusl-x64@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.0.4.tgz#93794e4d7720b077fcad3e02982f2f1c246751ff"
-  integrity sha512-viYN1KX9m+/hGkJtvYYp+CCLgnJXwiQB39damAO7WMdKWlIhmYTfHjwSbQeUK/20vY154mwezd9HflVFM1wVSw==
-
-"@img/sharp-linux-arm64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.33.5.tgz#edb0697e7a8279c9fc829a60fc35644c4839bb22"
-  integrity sha512-JMVv+AMRyGOHtO1RFBiJy/MBsgz0x4AWrT6QoEVVTyh1E39TrCUpTRI7mx9VksGX4awWASxqCYLCV4wBZHAYxA==
-  optionalDependencies:
-    "@img/sharp-libvips-linux-arm64" "1.0.4"
-
-"@img/sharp-linux-arm@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linux-arm/-/sharp-linux-arm-0.33.5.tgz#422c1a352e7b5832842577dc51602bcd5b6f5eff"
-  integrity sha512-JTS1eldqZbJxjvKaAkxhZmBqPRGmxgu+qFKSInv8moZ2AmT5Yib3EQ1c6gp493HvrvV8QgdOXdyaIBrhvFhBMQ==
-  optionalDependencies:
-    "@img/sharp-libvips-linux-arm" "1.0.5"
-
-"@img/sharp-linux-s390x@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.33.5.tgz#f5c077926b48e97e4a04d004dfaf175972059667"
-  integrity sha512-y/5PCd+mP4CA/sPDKl2961b+C9d+vPAveS33s6Z3zfASk2j5upL6fXVPZi7ztePZ5CuH+1kW8JtvxgbuXHRa4Q==
-  optionalDependencies:
-    "@img/sharp-libvips-linux-s390x" "1.0.4"
-
-"@img/sharp-linux-x64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linux-x64/-/sharp-linux-x64-0.33.5.tgz#d806e0afd71ae6775cc87f0da8f2d03a7c2209cb"
-  integrity sha512-opC+Ok5pRNAzuvq1AG0ar+1owsu842/Ab+4qvU879ippJBHvyY5n2mxF1izXqkPYlGuP/M556uh53jRLJmzTWA==
-  optionalDependencies:
-    "@img/sharp-libvips-linux-x64" "1.0.4"
-
-"@img/sharp-linuxmusl-arm64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.33.5.tgz#252975b915894fb315af5deea174651e208d3d6b"
-  integrity sha512-XrHMZwGQGvJg2V/oRSUfSAfjfPxO+4DkiRh6p2AFjLQztWUuY/o8Mq0eMQVIY7HJ1CDQUJlxGGZRw1a5bqmd1g==
-  optionalDependencies:
-    "@img/sharp-libvips-linuxmusl-arm64" "1.0.4"
-
-"@img/sharp-linuxmusl-x64@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.33.5.tgz#3f4609ac5d8ef8ec7dadee80b560961a60fd4f48"
-  integrity sha512-WT+d/cgqKkkKySYmqoZ8y3pxx7lx9vVejxW/W4DOFMYVSkErR+w7mf2u8m/y4+xHe7yY9DAXQMWQhpnMuFfScw==
-  optionalDependencies:
-    "@img/sharp-libvips-linuxmusl-x64" "1.0.4"
-
-"@img/sharp-wasm32@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-wasm32/-/sharp-wasm32-0.33.5.tgz#6f44f3283069d935bb5ca5813153572f3e6f61a1"
-  integrity sha512-ykUW4LVGaMcU9lu9thv85CbRMAwfeadCJHRsg2GmeRa/cJxsVY9Rbd57JcMxBkKHag5U/x7TSBpScF4U8ElVzg==
-  dependencies:
-    "@emnapi/runtime" "^1.2.0"
-
-"@img/sharp-win32-ia32@0.33.5":
-  version "0.33.5"
-  resolved "https://registry.yarnpkg.com/@img/sharp-win32-ia32/-/sharp-win32-ia32-0.33.5.tgz#1a0c839a40c5351e9885628c85f2e5dfd02b52a9"
-  integrity sha512-T36PblLaTwuVJ/zw/LaH0PdZkRz5rd3SmMHX8GSmR7vtNSP5Z6bQkExdSK7xGWyxLw4sUknBuugTelgw2faBbQ==
-
 "@img/sharp-win32-x64@0.33.5":
   version "0.33.5"
   resolved "https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
+
+"@internationalized/date@>=3.0.0", "@internationalized/date@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/@internationalized/date/-/date-3.7.0.tgz"
+  integrity sha512-VJ5WS3fcVx0bejE/YHfbDKR/yawZgKqn/if+oEeLqNwBtPzVB06olkfcnojTmEMX+gTpH+FlQ69SHNitJ8/erQ==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@internationalized/number@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/@internationalized/number/-/number-3.6.0.tgz"
+  integrity sha512-PtrRcJVy7nw++wn4W2OuePQQfTqDzfusSuY1QTtui4wa7r+rGVtR75pO8CyKvHvzyQYi3Q1uO5sY0AsB4e65Bw==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
 
 "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.8"
@@ -1008,41 +444,6 @@
   dependencies:
     fast-glob "3.3.1"
 
-"@next/swc-darwin-arm64@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-15.1.7.tgz#ecc6eacf174df36a6c73f7c319ed864ec6e08079"
-  integrity sha512-hPFwzPJDpA8FGj7IKV3Yf1web3oz2YsR8du4amKw8d+jAOHfYHYFpMkoF6vgSY4W6vB29RtZEklK9ayinGiCmQ==
-
-"@next/swc-darwin-x64@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-15.1.7.tgz#d25b4c131d13439ea4b263dbcd0fd518a835f31c"
-  integrity sha512-2qoas+fO3OQKkU0PBUfwTiw/EYpN+kdAx62cePRyY1LqKtP09Vp5UcUntfZYajop5fDFTjSxCHfZVRxzi+9FYQ==
-
-"@next/swc-linux-arm64-gnu@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-15.1.7.tgz#b19abc7b56918042b5309f55f7010e7932ee4967"
-  integrity sha512-sKLLwDX709mPdzxMnRIXLIT9zaX2w0GUlkLYQnKGoXeWUhcvpCrK+yevcwCJPdTdxZEUA0mOXGLdPsGkudGdnA==
-
-"@next/swc-linux-arm64-musl@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-15.1.7.tgz#cb2ac35d3024e9d46ce0d4ff03bf491e0773519f"
-  integrity sha512-zblK1OQbQWdC8fxdX4fpsHDw+VSpBPGEUX4PhSE9hkaWPrWoeIJn+baX53vbsbDRaDKd7bBNcXRovY1hEhFd7w==
-
-"@next/swc-linux-x64-gnu@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.1.7.tgz#cf6e338a1fbb1c9b019c158a76a7ab4f143929ce"
-  integrity sha512-GOzXutxuLvLHFDAPsMP2zDBMl1vfUHHpdNpFGhxu90jEzH6nNIgmtw/s1MDwpTOiM+MT5V8+I1hmVFeAUhkbgQ==
-
-"@next/swc-linux-x64-musl@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-15.1.7.tgz#94c9117ece8e5851e7e6674f12d6b82b435e3a6f"
-  integrity sha512-WrZ7jBhR7ATW1z5iEQ0ZJfE2twCNSXbpCSaAunF3BKcVeHFADSI/AW1y5Xt3DzTqPF1FzQlwQTewqetAABhZRQ==
-
-"@next/swc-win32-arm64-msvc@15.1.7":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-15.1.7.tgz#4947f3b7f41c7347114985bf3c91e2eacddfe124"
-  integrity sha512-LDnj1f3OVbou1BqvvXVqouJZKcwq++mV2F+oFHptToZtScIEnhNRJAhJzqAtTE2dB31qDYL45xJwrc+bLeKM2Q==
-
 "@next/swc-win32-x64-msvc@15.1.7":
   version "15.1.7"
   resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-15.1.7.tgz"
@@ -1056,7 +457,7 @@
     "@nodelib/fs.stat" "2.0.5"
     run-parallel "^1.1.9"
 
-"@nodelib/fs.stat@2.0.5", "@nodelib/fs.stat@^2.0.2":
+"@nodelib/fs.stat@^2.0.2", "@nodelib/fs.stat@2.0.5":
   version "2.0.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
   integrity sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==
@@ -1074,10 +475,10 @@
   resolved "https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
-"@popperjs/core@^2.9.3":
-  version "2.11.8"
-  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
-  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+"@pandacss/is-valid-prop@0.41.0":
+  version "0.41.0"
+  resolved "https://registry.npmjs.org/@pandacss/is-valid-prop/-/is-valid-prop-0.41.0.tgz"
+  integrity sha512-BE6h6CsJk14ugIRrsazJtN3fcg+KDFRat1Bs93YFKH6jd4DOb1yUyVvC70jKqPVvg70zEcV8acZ7VdcU5TLu+w==
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -1094,7 +495,7 @@
   resolved "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz"
   integrity sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==
 
-"@swc/helpers@0.5.15":
+"@swc/helpers@^0.5.0", "@swc/helpers@0.5.15":
   version "0.5.15"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz"
   integrity sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==
@@ -1116,18 +517,6 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/lodash.mergewith@4.6.6":
-  version "4.6.6"
-  resolved "https://registry.npmjs.org/@types/lodash.mergewith/-/lodash.mergewith-4.6.6.tgz"
-  integrity sha512-RY/8IaVENjG19rxTZu9Nukqh0W2UrYgmBj5sdns4hWRZaV8PqR7wIKHFKzvOTjo4zVRV7sVI+yFhAJql12Kfqg==
-  dependencies:
-    "@types/lodash" "*"
-
-"@types/lodash@*":
-  version "4.17.15"
-  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.17.15.tgz"
-  integrity sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==
-
 "@types/node@^20":
   version "20.17.19"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.17.19.tgz"
@@ -1145,7 +534,7 @@
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.0.3.tgz"
   integrity sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==
 
-"@types/react@^19.0.10":
+"@types/react@^19.0.0", "@types/react@^19.0.10":
   version "19.0.10"
   resolved "https://registry.npmjs.org/@types/react/-/react-19.0.10.tgz"
   integrity sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==
@@ -1167,7 +556,7 @@
     natural-compare "^1.4.0"
     ts-api-utils "^2.0.1"
 
-"@typescript-eslint/parser@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
+"@typescript-eslint/parser@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/parser@^8.0.0 || ^8.0.0-alpha.0":
   version "8.24.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.24.0.tgz"
   integrity sha512-MFDaO9CYiard9j9VepMNa9MTcqVvSny2N4hkY6roquzj8pdCBRENhErrteaQuu7Yjn1ppk0v1/ZF9CG3KIlrTA==
@@ -1233,17 +622,683 @@
     "@typescript-eslint/types" "8.24.0"
     eslint-visitor-keys "^4.2.0"
 
-"@zag-js/focus-visible@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@zag-js/focus-visible/-/focus-visible-0.1.0.tgz"
-  integrity sha512-PeaBcTmdZWcFf7n1aM+oiOdZc+sy14qi0emPIeUuGMTjbP0xLGrZu43kdpHnWSXy7/r4Ubp/vlg50MCV8+9Isg==
+"@zag-js/accordion@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/accordion/-/accordion-1.8.2.tgz"
+  integrity sha512-JszESCOvftl3dG6lEPjZp2p3+0VN0fwMnW+1jhWwMEe5MZ0y0IrcXww2dxet1ln+w5ViRdOTeDR07idbDKYAYg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/anatomy@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/anatomy/-/anatomy-1.8.2.tgz"
+  integrity sha512-F88Q+Bo1KOFZPHLffOqiuemkgZJbtspQuyOJcWb0bL7Lc1pYC4DIpIj26bcXT8xICDNcwR877hI0Wko//ZgTVA==
+
+"@zag-js/aria-hidden@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/aria-hidden/-/aria-hidden-1.8.2.tgz"
+  integrity sha512-/SV23qfCWMbGdsNZ2pgmVqOv6a4yd/2+FAIRy/6bjZ8axBzhm7NvfDhqjZciN4JuMch82uafeTBZ7pObk/fU1g==
+
+"@zag-js/auto-resize@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/auto-resize/-/auto-resize-1.8.2.tgz"
+  integrity sha512-Z+94iR/vbPixiifjF+pmOa1UtuM5TTnJqM7D+Ol3WenRrm+Urp4JWAcyaf76NRVWK51KwMwWLljeA6J0H3V6gQ==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/avatar@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/avatar/-/avatar-1.8.2.tgz"
+  integrity sha512-PWhYVvXyOt+kdi2Vd6GfqGQQruh1TNylw6TzNbhPt3B6Fj6uNvQqfEsh6yNErfnCeaa4b/Q+48rM4b/t3DzM0g==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/carousel@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/carousel/-/carousel-1.8.2.tgz"
+  integrity sha512-ViPcVQFQfw8ry3i4m2HYixTfN5Km979TWtMnDKdDM3csXLOQJvfCIHtZ/08wWn1302zaDMQe72+p9jDqzqntMg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/scroll-snap" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/checkbox@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/checkbox/-/checkbox-1.8.2.tgz"
+  integrity sha512-KWVKo2Cofs9bjKf9QN9d9UJ6jQFuKfTPT4smDIqhXo4MIFa5eOd6yxvwbgvLvBlvvr9I6Amm9T4e9XxFbyrHdA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-visible" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/clipboard@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/clipboard/-/clipboard-1.8.2.tgz"
+  integrity sha512-KwyFxLDPkEwjiI6zxRKG1gQk1q+lL1HN6nvGCMKRxoDtYVaY9VRxQ6mVNg2VUIecM8uuhRnkM1WHGrSTUcaFcQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/collapsible@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/collapsible/-/collapsible-1.8.2.tgz"
+  integrity sha512-rtvR4WaMnjv0cW6f+wYqIKkRGhckqlY7nVYBUjGqIzlKq0VNzRgugS8qWpoqdupQJ9wyjusb/GXLOudqpdl1lw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/collection@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/collection/-/collection-1.8.2.tgz"
+  integrity sha512-GQ6bMscyX3R5wXct6pIMFNd9vm/Ofux7bAwdavp1RrYu/iMKRg/tLbJIOYMQ9VXpjbiOB+6f2GVtHAM0eYLb6A==
+  dependencies:
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/color-picker@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/color-picker/-/color-picker-1.8.2.tgz"
+  integrity sha512-WFuU5T99GPtqiD1MBZlurBjNMpHZQmbzaTgO6mdKQv3IKa2+I2jqXlnTnJbjTRmsF2DhAo45mEyGOvLwlTfTNA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/color-utils" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/color-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/color-utils/-/color-utils-1.8.2.tgz"
+  integrity sha512-6oB+oxCSQoJu8sw1POQNzFLRN1wFDR5b+DSincqBR1QoKLr5K4iYmwJZ7UySvDF8uZATaShvB/qVVxniUpZ17w==
+  dependencies:
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/combobox@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/combobox/-/combobox-1.8.2.tgz"
+  integrity sha512-jQo1cDtsUlBMPmBv/P7pUBHpxu19L+Pd5zXWOcdYXXMyFQg/KrW+PLS84G3yk2UCoH7ywKY25wFdMcOrqrTdUw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/aria-hidden" "1.8.2"
+    "@zag-js/collection" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/core@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/core/-/core-1.8.2.tgz"
+  integrity sha512-vZDvvXuoxKnVXqBS6H6ZGbfxRWaQ9DStVS/a+tLdP0pz05NJwyJIPSWOOHZo9XPDiN4j1mRaTVcSvNpuOSEDTw==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/date-picker@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/date-picker/-/date-picker-1.8.2.tgz"
+  integrity sha512-SnZgQOxUajnuQUDIcq73Gxy+fifm3/F0H4tokE8LAbbkcf5kr/Pyin+2amhiXBkbDiUbeCttx34TlD4HXwmjyQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/date-utils" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/live-region" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/date-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/date-utils/-/date-utils-1.8.2.tgz"
+  integrity sha512-KFMcZMb7xC7XypH1VDQIiYv4dpxB+1JEG2QX7zbYos+QKd41A8tNtaDnfJX+iePVsJV156gqiOrtogNvz4rJ8A==
+
+"@zag-js/dialog@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/dialog/-/dialog-1.8.2.tgz"
+  integrity sha512-1XJIb0/YNBV5LgcRQ7ZwS/GvJiIy1e/iaZvYea6RRAInxcNH6KFon9U1Hm1Lfdz9GryCMs32WDhlFcYQoeGlKw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/aria-hidden" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-trap" "1.8.2"
+    "@zag-js/remove-scroll" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/dismissable@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/dismissable/-/dismissable-1.8.2.tgz"
+  integrity sha512-YGQB60pr/jbldJlt0LtToriJEMX8ds8uxienPModMgzEPo7yEDf30VMo4Ix8Sm38E6CJBOcm87vKHrrD8aEfnw==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/interact-outside" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/dom-query@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/@zag-js/dom-query/-/dom-query-1.8.1.tgz"
+  integrity sha512-+2DYAW9riWnAAf7etTkaVqpaTHjYSHYGExJtBmZ6KurmYsc7Uw46mAcIImakZhrg69AI0cpL4b2YJHMQz8GGZA==
+  dependencies:
+    "@zag-js/types" "1.8.1"
+
+"@zag-js/dom-query@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/dom-query/-/dom-query-1.8.2.tgz"
+  integrity sha512-bn6Pxga19PJzpDb+Oh326kn1sgVfO97mxRzRFqzrKz9NuANGlCblmv2NTYmhfppqE1nt9QyLLhyQ2BLbzwouLg==
+  dependencies:
+    "@zag-js/types" "1.8.2"
+
+"@zag-js/editable@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/editable/-/editable-1.8.2.tgz"
+  integrity sha512-NFg5qp2IzE0nvDFf+UyFIIHGFBCyB5r74YIVBb0oJnVcIzrYa1+HA2ZrNMzTnjpZdx7B5lE/99VAsvk2Mb+GtA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/interact-outside" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/file-upload@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/file-upload/-/file-upload-1.8.2.tgz"
+  integrity sha512-b+xt9W5CqFG0NCB4F6C29FcFPlV0q5LC7m7mj7iMhk+dRkWPVhxr9o5SFPtjXLZlncFNgHfMkBU7Ktx5JY8CSA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/file-utils" "1.8.2"
+    "@zag-js/i18n-utils" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/file-utils@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/@zag-js/file-utils/-/file-utils-1.8.1.tgz"
+  integrity sha512-IdulHjOzPeZWNURY1rM/FbltdnXIOjUsOA7wWAped6oMMtDmWlrfpKtFs2emnXd04mZLnZN9yBO5WtHI7TTWeg==
+  dependencies:
+    "@zag-js/i18n-utils" "1.8.1"
+
+"@zag-js/file-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/file-utils/-/file-utils-1.8.2.tgz"
+  integrity sha512-VBn2PeVtfj4c4snVcvp9oVFFiOVwJQ1OvS44CXv2xl9u4hRnDVSHalNmdj5jOqspNmTy9xNCKQWPK73ef26msQ==
+  dependencies:
+    "@zag-js/i18n-utils" "1.8.2"
+
+"@zag-js/focus-trap@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/focus-trap/-/focus-trap-1.8.2.tgz"
+  integrity sha512-GzKdicdiVjlOOsNzmmRAZVccs902PXnoyO+qkzXlIsr8+RPRgtPlZthIp6wtr4CJ2vLOMByvrEt7wCNSIoDzxA==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/focus-visible@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/focus-visible/-/focus-visible-1.8.2.tgz"
+  integrity sha512-YXkB4ClgEf/gTRGUrTDThvxfThpey41dDKcuQIPTA6F76ji4jLQiDYLnw4KDxLW8uLL21jZgctO5FFdIMoxJeg==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/highlight-word@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/highlight-word/-/highlight-word-1.8.2.tgz"
+  integrity sha512-yI65t4bFxTUkZbHuntRCdBPOEQdpO8G4nkoY8WznBetQ1LLhqOd+7KXelzq+Vot2RbXzop54xEBvgKeTQbGOgg==
+
+"@zag-js/hover-card@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/hover-card/-/hover-card-1.8.2.tgz"
+  integrity sha512-GwYGsojbVpyhOCz+XUnEtxA9ZmUlnfPrnE71j/Gc2+oLtOFwvnhINtBTZPCUXO5ec95uG9QFwxc63x1upB/PIA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/i18n-utils@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/@zag-js/i18n-utils/-/i18n-utils-1.8.1.tgz"
+  integrity sha512-Epj/VOsJppsHlo2YwGV718CsZEneH9OVZtD8LB7j/zGXjQr/LALErCQQVOJXlBO6Ky2G/ZE/vK4LyO5GIjkTKw==
+  dependencies:
+    "@zag-js/dom-query" "1.8.1"
+
+"@zag-js/i18n-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/i18n-utils/-/i18n-utils-1.8.2.tgz"
+  integrity sha512-Zhiw2U14kkYRPru/5nWYei0l0eiQOkTu2VDCc/mn9jd7+zDEIYNp3b1CvMQ3/ES21i1HH6uBuKKujuktH/f6Iw==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/interact-outside@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/interact-outside/-/interact-outside-1.8.2.tgz"
+  integrity sha512-7N0v/vdsJO5a7AjwWofZ99AP5/hzFfCShSgEfg4GpRk7gPOdFanm7U3Zy9LtVvM9gwRncqGwjo4yd6O5G7SCnA==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/live-region@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/live-region/-/live-region-1.8.2.tgz"
+  integrity sha512-QkowjTQj9C6ZFSCB+E7QNU5yjWMA58cAR5TcWgdLLKAP+SJwaTdtptpyFq71VH+jT85sNvvBZVya1aWZrbGopg==
+
+"@zag-js/menu@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/menu/-/menu-1.8.2.tgz"
+  integrity sha512-kEz1FJ0kgkutN1XDpS27GAkk1T/v3fUctBHrj0Wvt7TvQfPyzudyjmj35UEP5e8AglJAoQt2Am93YPSQ2deJwg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/rect-utils" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/number-input@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/number-input/-/number-input-1.8.2.tgz"
+  integrity sha512-oyxXI/FDDj40BMkkLHDu84me3TgLIZizQhMj51R3ZM5Qg5BucYbamQKDgcGbb2CI6BUPo+6jklO0QZmy8/2cTQ==
+  dependencies:
+    "@internationalized/number" "3.6.0"
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/pagination@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/pagination/-/pagination-1.8.2.tgz"
+  integrity sha512-+Ummfw6r0Ll4oFVRvoVhPSvox8y2vvIocjGip0e6ze8zaUuHgUYzNkcK7OalZ3pZkh9y0+9MlnqtsQwxZhMJPw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/pin-input@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/pin-input/-/pin-input-1.8.2.tgz"
+  integrity sha512-TME6Maud8Z78ZxFru7WvBGf5EQAuMoPQfdTMpd8os24srtO+HwiFN1wbeBsV/6BmbOeA9gFuB4K8O8rqNn3uqg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/popover@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/popover/-/popover-1.8.2.tgz"
+  integrity sha512-c3uk6t5MG3xluf2LR1adOGnCsKchfRqzB7K9/fyBvWXBFyFiV5DWXdc2NpnzvB0Z5fQVJMrBiMnpvmzqbVovAA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/aria-hidden" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-trap" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/remove-scroll" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/popper@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/popper/-/popper-1.8.2.tgz"
+  integrity sha512-OfZS5KKQZsaENZG1SliM8/shtAKmKrprJuWpn3/kzcOAO/obNZfApld4oa1N5FoePLLTY96qVfdC5W9xygKRDQ==
+  dependencies:
+    "@floating-ui/dom" "1.6.13"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/presence@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/presence/-/presence-1.8.2.tgz"
+  integrity sha512-aT9PPQAY28HeAxiSeIhnOmlkI+tw0ippxtUWenxQ6B3yyU/ZOGVqc4f7eY418z65lF2yziYvUkZgOdWc6E4kZA==
+  dependencies:
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+
+"@zag-js/progress@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/progress/-/progress-1.8.2.tgz"
+  integrity sha512-QUzPe5Xj0zSexKJ1+JCmQnJ+pZ5EeRjMLWSn4cdeUJtzEuPosBLCzJtMzl+uZ/mTg2YVgPC7l6wV6nfMYrco/g==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/qr-code@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/qr-code/-/qr-code-1.8.2.tgz"
+  integrity sha512-W47UwF5jBL3NraobAOC9aYFpMFiXhDzgZ6O3f4Zhd3eDx6BnUvebZ+GOfE71EmJ0fu43mF6o3ial8H4nxj2myQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+    proxy-memoize "3.0.1"
+    uqr "0.1.2"
+
+"@zag-js/radio-group@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/radio-group/-/radio-group-1.8.2.tgz"
+  integrity sha512-WY0QT4XkqgXD1N1VZG11gTnu7rGaPYizZIq/m1NS0ls6b/tTnwdlrPL2bgBzlJtyuuCeQJXh5pTypCiNoAZurg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-visible" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/rating-group@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/rating-group/-/rating-group-1.8.2.tgz"
+  integrity sha512-azCMgF7FAyvDJ+fcAYzFQHhZpeydPW6h7JvYIvLsz/K609D1HJT85gtCzG+drgBhE4tRyvFdYKDkTCvOpVnkGA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/react@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/react/-/react-1.8.2.tgz"
+  integrity sha512-Fz9WR6wZQOAxCLSTSmUnGL+VH2/HVxvdlOKOHoUrJ0+9QOmlGrZf+mxpJuGgqUW3RyMzzpHfly8TKZkqHRYd3g==
+  dependencies:
+    "@zag-js/core" "1.8.2"
+    "@zag-js/store" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/rect-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/rect-utils/-/rect-utils-1.8.2.tgz"
+  integrity sha512-RWgPe+MOtOJaWjvlGD1Cf1snmD+hem1mfxXqM3XTCZCjuAlqAzHSCyuBUDia96nU0YGgAxYuloQLh8HFLJcVPA==
+
+"@zag-js/remove-scroll@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/remove-scroll/-/remove-scroll-1.8.2.tgz"
+  integrity sha512-zJvLCKcb1yWEdWCP+cDhnYTY1MyoNzuiYOwWTh2YiktQYC0zpd2KDbd+jdhSWIpbIdV22UMuy4sDfFpx6i/mqA==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/scroll-snap@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/scroll-snap/-/scroll-snap-1.8.2.tgz"
+  integrity sha512-kyM4ZsRvq5WuJJZVr1TQ1xjuso0ANhySMtILH1kC9EFGIOwZegnIpZt5K1rf5NBFmBrcBjUl+lEKwySRNFauhw==
+  dependencies:
+    "@zag-js/dom-query" "1.8.2"
+
+"@zag-js/select@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/select/-/select-1.8.2.tgz"
+  integrity sha512-ZsBU7kGp8TX4gNavmiTWz9cB+6KgqHXxSwgARnaYUBsYhpdDG2SYfzgyfGAYcAv4ejNTFEfvNk89h+Kpz4CeOg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/collection" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/signature-pad@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/signature-pad/-/signature-pad-1.8.2.tgz"
+  integrity sha512-Jl3kRbxo3fkey9uqdVDyGROlECa3MpOXaMWDzO58vodrOjjLnZPO1VPF4xvjG5LUsEOGx54R97Tpc2hS3t93Pw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+    perfect-freehand "^1.2.2"
+
+"@zag-js/slider@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/slider/-/slider-1.8.2.tgz"
+  integrity sha512-+tncZezgA4FVHV6M7a6lV3cPJUa5OsP7ouXkYGw7Z3cvOoFLaL+bxaCe/UHouRTKqoZj4ImR83x85xcIj50e1g==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/splitter@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/splitter/-/splitter-1.8.2.tgz"
+  integrity sha512-jcr382kBA/pRrQu04PVqB2U4Tn32wBCbJMX4UC/tmuVTP5RwQrA4WaDs21CelfntI0qEbzCMxFfYvbU7+ma7iw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/steps@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/steps/-/steps-1.8.2.tgz"
+  integrity sha512-iCwaiT6q0GyhZCnHH9bwmQfYGqVmN5ObF+efV2eYDVsuICKe/PlEHL7H3gRClJR6x6FehXmYYI/gCI/PLzsuHg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/store@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/store/-/store-1.8.2.tgz"
+  integrity sha512-Q/sg8L5B3lbX1MWFJNhE5bcPzJrwhRcgDGtvKf8KDKcbcirhF5HiXUbbE4jvav52QVQYKru+WnOJ8WVj5Bi3tA==
+  dependencies:
+    proxy-compare "3.0.1"
+
+"@zag-js/switch@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/switch/-/switch-1.8.2.tgz"
+  integrity sha512-WYgtfzponocm4rrJcG4CNy1xsOwOXZ1yE9NBNKvew2Cj5yZLpTQLcjJBlWR5VjZ3Tgx+3D/F2nmBYzVFtU8zyw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-visible" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/tabs@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/tabs/-/tabs-1.8.2.tgz"
+  integrity sha512-aM7gx9aj1DcyTV6T5H7okMHWBhi/0jdjhUhFRWWSdYxiYvpveBhVK+Tvg9Nq9GBqXZEgg8E1hxuLgPQUZv7QBQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/tags-input@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/tags-input/-/tags-input-1.8.2.tgz"
+  integrity sha512-9DF2pXz6a6lX5IiCwg8ug0TSLZ3FILIHUaX9WNBSx7afDlCMH36UgKhyfs2Xhl9gliVC/6a0Tr2sX5VDEYCe7g==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/auto-resize" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/interact-outside" "1.8.2"
+    "@zag-js/live-region" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/time-picker@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/time-picker/-/time-picker-1.8.2.tgz"
+  integrity sha512-RdAPrRBeuiCL7m4PdEZOR6YzfQfOeNElgjEAVLZgUTu4WEhLt/XVdjaOuUQtiuLW4ukT72wNVWi0S+NBCHerIw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/timer@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/timer/-/timer-1.8.2.tgz"
+  integrity sha512-EUqVacZyrKuvzDFHRZLYjDzNwMyr/5cQCu4m1Da4nv7hvqivDvofU2HUUf7mi7isuYuRaRAZ6sFQqknmvfbKQQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/toast@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/toast/-/toast-1.8.2.tgz"
+  integrity sha512-ew+lfy8y5j4HWj5Ir9RoSfQKlbZnmGnn1r8GHMBhQXegWVGWAb04n4sp7t/e656iBif9HpLm3+/SUwOdCPIiJg==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/toggle-group@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/toggle-group/-/toggle-group-1.8.2.tgz"
+  integrity sha512-kBvFQtUJ70PpqJ6aA9uLCXLvSTiUMhzX3GkJbmTxffu2BdVKUF5OEKW3x9VpYdPeekBnayCXoGdW7WEOkgpYGw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/toggle@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/toggle/-/toggle-1.8.2.tgz"
+  integrity sha512-2EebV04Hv25ex1jQVa1Cjb4A85qcC6kvABn4qR6wZooxf5Ua72C9sdiEjrAvMhDGAWaa37JuxlyYs+sZG1l0Lw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/tooltip@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/tooltip/-/tooltip-1.8.2.tgz"
+  integrity sha512-FqDq4H3PFnEJt96JCr4dap3Pkcq2D0Gb/G5G5gG3QAs7kOIHL2Jpq1CGCxE3EpmQOFee1HwyokC6R4Q4kot1Nw==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-visible" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/store" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/tour@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/tour/-/tour-1.8.2.tgz"
+  integrity sha512-67Qw+dYY8ayf1x0ggvU0U0MoS0I/nhVe9JRpabPjYc09123DgGsDA4sdbj6VfCeFW6j3kffn5VEmTm8C3yV8gA==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dismissable" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/focus-trap" "1.8.2"
+    "@zag-js/interact-outside" "1.8.2"
+    "@zag-js/popper" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/tree-view@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/tree-view/-/tree-view-1.8.2.tgz"
+  integrity sha512-l/JmKjkz/BM59HVscazl8BMJj+suXl+FNRQVZqhyijzlb2PrB5xtgiQNV9XLNM2qHBCub9820Y1YMLyEP5YiwQ==
+  dependencies:
+    "@zag-js/anatomy" "1.8.2"
+    "@zag-js/collection" "1.8.2"
+    "@zag-js/core" "1.8.2"
+    "@zag-js/dom-query" "1.8.2"
+    "@zag-js/types" "1.8.2"
+    "@zag-js/utils" "1.8.2"
+
+"@zag-js/types@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/@zag-js/types/-/types-1.8.1.tgz"
+  integrity sha512-gJU3UlRccL2N4ukG4xEtetAr/fiuFBxpG5IKZ/Pr0zz8Z17LpdhK7ozyn9SU7y9W6YOcngByAgNgz+nRzmu5aQ==
+  dependencies:
+    csstype "3.1.3"
+
+"@zag-js/types@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/types/-/types-1.8.2.tgz"
+  integrity sha512-J+94HhFAPOBchNdGcmvqjB8nbQFgKHcqGoPl5vNTKlcoibN0yFjn4XFZoQU6uCf8sPhNg6NUNTkluR5YjybyJA==
+  dependencies:
+    csstype "3.1.3"
+
+"@zag-js/utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@zag-js/utils/-/utils-1.8.2.tgz"
+  integrity sha512-7HnRAQ7+pR00c4BQChulTdf6G1gJ0NqV4mMKd9UXk4/E7GLYinUdBNAZ3jZCdHDrio3+2zIlNvpzkO3G4pVjlw==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
-acorn@^8.14.0:
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8.14.0:
   version "8.14.0"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.14.0.tgz"
   integrity sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==
@@ -1269,13 +1324,6 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
-
-aria-hidden@^1.1.1:
-  version "1.2.4"
-  resolved "https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.4.tgz"
-  integrity sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==
-  dependencies:
-    tslib "^2.0.0"
 
 aria-query@^5.3.2:
   version "5.3.2"
@@ -1382,7 +1430,7 @@ async-function@^1.0.0:
 
 asynckit@^0.4.0:
   version "0.4.0"
-  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
 available-typed-arrays@^1.0.7:
@@ -1398,9 +1446,9 @@ axe-core@^4.10.0:
   integrity sha512-RE3mdQ7P3FRSe7eqCWoeQ/Z9QXrtniSjp1wUjt5nRC3WIpz5rSCve6o3fsZ2aCpJtrZjSZgjwXAoTO5k4tEI0w==
 
 axios@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.8.1.tgz#7c118d2146e9ebac512b7d1128771cdd738d11e3"
-  integrity sha512-NN+fvwH/kV01dYUQ3PTOZns4LWtWhOFCAhQ/pHb88WQ1hNe5V/dvFwc4VJcDL11LT9xSX0QtsR8sWUuyOuOq7g==
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/axios/-/axios-1.9.0.tgz"
+  integrity sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -1533,15 +1581,10 @@ color@^4.2.3:
 
 combined-stream@^1.0.8:
   version "1.0.8"
-  resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
   dependencies:
     delayed-stream "~1.0.0"
-
-compute-scroll-into-view@1.0.14:
-  version "1.0.14"
-  resolved "https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-1.0.14.tgz"
-  integrity sha512-mKDjINe3tc6hGelUMNDzuhorIUZ7kS7BwyY0r2wQd2HOH2tRuJykiC06iSEX8y1TuhNzvz4GcJnK16mM2J1NMQ==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1555,15 +1598,8 @@ convert-source-map@^1.5.0:
 
 cookie@^0.4.1:
   version "0.4.2"
-  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.2.tgz#0e41f24de5ecf317947c82fc789e06a884824432"
+  resolved "https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz"
   integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
-
-copy-to-clipboard@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.npmjs.org/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz"
-  integrity sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==
-  dependencies:
-    toggle-selection "^1.0.6"
 
 cosmiconfig@^7.0.0:
   version "7.1.0"
@@ -1585,14 +1621,7 @@ cross-spawn@^7.0.6:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-css-box-model@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/css-box-model/-/css-box-model-1.2.1.tgz"
-  integrity sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw==
-  dependencies:
-    tiny-invariant "^1.0.6"
-
-csstype@^3.0.11, csstype@^3.0.2:
+csstype@^3.0.2, csstype@3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
@@ -1668,18 +1697,13 @@ define-properties@^1.1.3, define-properties@^1.2.1:
 
 delayed-stream@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
 detect-libc@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz"
   integrity sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==
-
-detect-node-es@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz"
-  integrity sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -1889,7 +1913,7 @@ eslint-module-utils@^2.12.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-import@^2.31.0:
+eslint-plugin-import@*, eslint-plugin-import@^2.31.0:
   version "2.31.0"
   resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.31.0.tgz"
   integrity sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==
@@ -1982,7 +2006,7 @@ eslint-visitor-keys@^4.2.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz"
   integrity sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==
 
-eslint@^9:
+eslint@*, "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^7.23.0 || ^8.0.0 || ^9.0.0", "eslint@^8.57.0 || ^9.0.0", eslint@^9:
   version "9.20.1"
   resolved "https://registry.npmjs.org/eslint/-/eslint-9.20.1.tgz"
   integrity sha512-m1mM33o6dBUjxl2qb6wv6nGNwCAsns1eKtaQ4l/NPHeTvhiUPbtdfMyktxN4B3fgHIgsYh1VT3V9txblpQHq+g==
@@ -2060,17 +2084,6 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.1.tgz"
-  integrity sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==
-  dependencies:
-    "@nodelib/fs.stat" "^2.0.2"
-    "@nodelib/fs.walk" "^1.2.3"
-    glob-parent "^5.1.2"
-    merge2 "^1.3.0"
-    micromatch "^4.0.4"
-
 fast-glob@^3.3.2:
   version "3.3.3"
   resolved "https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.3.tgz"
@@ -2082,6 +2095,17 @@ fast-glob@^3.3.2:
     merge2 "^1.3.0"
     micromatch "^4.0.8"
 
+fast-glob@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.1.tgz"
+  integrity sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
+
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz"
@@ -2091,6 +2115,11 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
+
+fast-safe-stringify@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz"
+  integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
 
 fastq@^1.6.0:
   version "1.19.0"
@@ -2144,16 +2173,9 @@ flatted@^3.2.9:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.3.2.tgz"
   integrity sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==
 
-focus-lock@^1.3.6:
-  version "1.3.6"
-  resolved "https://registry.npmjs.org/focus-lock/-/focus-lock-1.3.6.tgz"
-  integrity sha512-Ik/6OCk9RQQ0T5Xw+hKNLWrjSMtv51dD4GRmJjbD5a58TIEpI5a5iXagKVl3Z5UuyslMCA8Xwnu76jQob62Yhg==
-  dependencies:
-    tslib "^2.0.3"
-
 follow-redirects@^1.15.6:
   version "1.15.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.9.tgz"
   integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
 
 for-each@^0.3.3:
@@ -2165,7 +2187,7 @@ for-each@^0.3.3:
 
 form-data@^4.0.0:
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.2.tgz#35cabbdd30c3ce73deb2c42d3c8d3ed9ca51794c"
+  resolved "https://registry.npmjs.org/form-data/-/form-data-4.0.2.tgz"
   integrity sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==
   dependencies:
     asynckit "^0.4.0"
@@ -2181,13 +2203,6 @@ framer-motion@^12.4.3:
     motion-dom "^12.0.0"
     motion-utils "^12.0.0"
     tslib "^2.4.0"
-
-framesync@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.npmjs.org/framesync/-/framesync-5.3.0.tgz"
-  integrity sha512-oc5m68HDO/tuK2blj7ZcdEBRx3p1PjrgHazL8GYEpvULhrtGIFbQArN6cQS2QhW8mitffaB+VYzMjDqBxxQeoA==
-  dependencies:
-    tslib "^2.1.0"
 
 function-bind@^1.1.2:
   version "1.1.2"
@@ -2226,11 +2241,6 @@ get-intrinsic@^1.2.4, get-intrinsic@^1.2.5, get-intrinsic@^1.2.6, get-intrinsic@
     has-symbols "^1.1.0"
     hasown "^2.0.2"
     math-intrinsics "^1.1.0"
-
-get-nonce@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz"
-  integrity sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==
 
 get-proto@^1.0.0, get-proto@^1.0.1:
   version "1.0.1"
@@ -2652,7 +2662,7 @@ json5@^1.0.2:
 
 jwt-decode@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-4.0.0.tgz#2270352425fd413785b2faf11f6e755c5151bd4b"
+  resolved "https://registry.npmjs.org/jwt-decode/-/jwt-decode-4.0.0.tgz"
   integrity sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==
 
 keyv@^4.5.4:
@@ -2699,11 +2709,6 @@ lodash.merge@^4.6.2:
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash.mergewith@4.6.2:
-  version "4.6.2"
-  resolved "https://registry.npmjs.org/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz"
-  integrity sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==
-
 loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
@@ -2731,12 +2736,12 @@ micromatch@^4.0.4, micromatch@^4.0.8:
 
 mime-db@1.52.0:
   version "1.52.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
+  resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz"
   integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
 
 mime-types@^2.1.12:
   version "2.1.35"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
+  resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz"
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
   dependencies:
     mime-db "1.52.0"
@@ -2817,7 +2822,7 @@ next@15.1.7:
 
 nookies@^2.5.2:
   version "2.5.2"
-  resolved "https://registry.yarnpkg.com/nookies/-/nookies-2.5.2.tgz#cc55547efa982d013a21475bd0db0c02c1b35b27"
+  resolved "https://registry.npmjs.org/nookies/-/nookies-2.5.2.tgz"
   integrity sha512-x0TRSaosAEonNKyCrShoUaJ5rrT5KHRNZ5DwPCuizjgrnkpE5DRf3VL7AyyQin4htict92X1EQ7ejDbaHDVdYA==
   dependencies:
     cookie "^0.4.1"
@@ -2960,6 +2965,11 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+perfect-freehand@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/perfect-freehand/-/perfect-freehand-1.2.2.tgz"
+  integrity sha512-eh31l019WICQ03pkF3FSzHxB8n07ItqIQ++G5UV8JX0zVOXzgTGCqnRR0jJ2h9U8/2uW4W4mtGJELt9kEV0CFQ==
+
 picocolors@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
@@ -2970,7 +2980,7 @@ picomatch@^2.3.1:
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-picomatch@^4.0.2:
+"picomatch@^3 || ^4", picomatch@^4.0.2:
   version "4.0.2"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-4.0.2.tgz"
   integrity sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==
@@ -2994,7 +3004,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.6.2, prop-types@^15.8.1:
+prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -3003,10 +3013,22 @@ prop-types@^15.6.2, prop-types@^15.8.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+proxy-compare@^3.0.0, proxy-compare@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/proxy-compare/-/proxy-compare-3.0.1.tgz"
+  integrity sha512-V9plBAt3qjMlS1+nC8771KNf6oJ12gExvaxnNzN/9yVRLdTv/lc+oJlnSzrdYDAvBfTStPCoiaCOTmTs0adv7Q==
+
 proxy-from-env@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  resolved "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
+proxy-memoize@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/proxy-memoize/-/proxy-memoize-3.0.1.tgz"
+  integrity sha512-VDdG/VYtOgdGkWJx7y0o7p+zArSf2383Isci8C+BP3YXgMYDoPd3cCBjw0JdWb6YBb9sFiOPbAADDVTPJnh+9g==
+  dependencies:
+    proxy-compare "^3.0.0"
 
 punycode@^2.1.0:
   version "2.3.1"
@@ -3018,40 +3040,16 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-clientside-effect@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.npmjs.org/react-clientside-effect/-/react-clientside-effect-1.2.7.tgz"
-  integrity sha512-gce9m0Pk/xYYMEojRI9bgvqQAkl6hm7ozQvqWPyQx+kULiatdHgkNM1QG4DQRx5N9BAzWSCJmt9mMV8/KsdgVg==
-  dependencies:
-    "@babel/runtime" "^7.12.13"
-
-react-dom@^19.0.0:
+"react-dom@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react-dom@^18.0.0 || ^19.0.0", "react-dom@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react-dom@^19.0.0, react-dom@>=18, react-dom@>=18.0.0:
   version "19.0.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-19.0.0.tgz"
   integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
   dependencies:
     scheduler "^0.25.0"
 
-react-fast-compare@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
-  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
-
-react-focus-lock@^2.9.1:
-  version "2.13.6"
-  resolved "https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.13.6.tgz"
-  integrity sha512-ehylFFWyYtBKXjAO9+3v8d0i+cnc1trGS0vlTGhzFW1vbFXVUTmR8s2tt/ZQG8x5hElg6rhENlLG1H3EZK0Llg==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    focus-lock "^1.3.6"
-    prop-types "^15.6.2"
-    react-clientside-effect "^1.2.7"
-    use-callback-ref "^1.3.3"
-    use-sidecar "^1.1.3"
-
 react-icons@^5.5.0:
   version "5.5.0"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.5.0.tgz#8aa25d3543ff84231685d3331164c00299cdfaf2"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz"
   integrity sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==
 
 react-is@^16.13.1, react-is@^16.7.0:
@@ -3059,34 +3057,7 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-remove-scroll-bar@^2.3.7:
-  version "2.3.8"
-  resolved "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz"
-  integrity sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==
-  dependencies:
-    react-style-singleton "^2.2.2"
-    tslib "^2.0.0"
-
-react-remove-scroll@^2.5.4:
-  version "2.6.3"
-  resolved "https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.6.3.tgz"
-  integrity sha512-pnAi91oOk8g8ABQKGF5/M9qxmmOPxaAnopyTHYfqYEwJhyFrbbBtHuSgtKEoH0jpcxx5o3hXqH1mNd9/Oi+8iQ==
-  dependencies:
-    react-remove-scroll-bar "^2.3.7"
-    react-style-singleton "^2.2.3"
-    tslib "^2.1.0"
-    use-callback-ref "^1.3.3"
-    use-sidecar "^1.1.3"
-
-react-style-singleton@^2.2.2, react-style-singleton@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz"
-  integrity sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==
-  dependencies:
-    get-nonce "^1.0.0"
-    tslib "^2.0.0"
-
-react@^19.0.0:
+react@*, "react@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react@^18.0.0 || ^19.0.0", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.0.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", react@>=16.8.0, react@>=18, react@>=18.0.0:
   version "19.0.0"
   resolved "https://registry.npmjs.org/react/-/react-19.0.0.tgz"
   integrity sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==
@@ -3207,7 +3178,7 @@ semver@^7.6.0, semver@^7.6.3:
 
 set-cookie-parser@^2.4.6:
   version "2.7.1"
-  resolved "https://registry.yarnpkg.com/set-cookie-parser/-/set-cookie-parser-2.7.1.tgz#3016f150072202dfbe90fadee053573cc89d2943"
+  resolved "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.1.tgz"
   integrity sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==
 
 set-function-length@^1.2.2:
@@ -3456,11 +3427,6 @@ tapable@^2.2.0:
   resolved "https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
-tiny-invariant@^1.0.6:
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz"
-  integrity sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==
-
 tinyglobby@^0.2.10:
   version "0.2.10"
   resolved "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.10.tgz"
@@ -3475,11 +3441,6 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
-
-toggle-selection@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/toggle-selection/-/toggle-selection-1.0.6.tgz"
-  integrity sha512-BiZS+C1OS8g/q2RRbJmy59xpyghNBqrr6k5L/uKBGRsTfxmu3ffiRnd8mlGPUVayg8pvfi5urfnu8TU7DVOkLQ==
 
 ts-api-utils@^2.0.1:
   version "2.0.1"
@@ -3496,7 +3457,7 @@ tsconfig-paths@^3.15.0:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.4.0, tslib@^2.8.0:
+tslib@^2.4.0, tslib@^2.8.0:
   version "2.8.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
@@ -3553,7 +3514,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@^5.7.3:
+typescript@^5.7.3, typescript@>=3.3.1, typescript@>=4.8.4, "typescript@>=4.8.4 <5.8.0":
   version "5.7.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.7.3.tgz"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
@@ -3573,27 +3534,17 @@ undici-types@~6.19.2:
   resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
+uqr@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/uqr/-/uqr-0.1.2.tgz"
+  integrity sha512-MJu7ypHq6QasgF5YRTjqscSzQp/W11zoUk6kvmlH+fmWEs63Y0Eib13hYFwAzagRJcVY8WVnlV+eBDUGMJ5IbA==
+
 uri-js@^4.2.2:
   version "4.4.1"
   resolved "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz"
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-use-callback-ref@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz"
-  integrity sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==
-  dependencies:
-    tslib "^2.0.0"
-
-use-sidecar@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz"
-  integrity sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==
-  dependencies:
-    detect-node-es "^1.1.0"
-    tslib "^2.0.0"
 
 which-boxed-primitive@^1.1.0, which-boxed-primitive@^1.1.1:
   version "1.1.1"

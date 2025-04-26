@@ -2,9 +2,52 @@ import { ChangeEvent, useState } from "react"
 import Head from "next/head"
 import { Sidebar } from "@/components/sidebar"
 import { Flex, Heading, Text, Button, Input, Select } from "@chakra-ui/react"
+import { canSRRAuth } from "@/utils/canSSRAuth";
+import { setupApiClient } from "@/services/api";
+import { useRouter } from "next/router";
 
-export default function New() {
+interface HaircutsProps {
+  id: string;
+  name: string;
+  price: number | string;
+  status: boolean;
+  user_id: string;
+}
+
+interface NewProps {
+  haircuts: HaircutsProps[];
+}
+
+export default function New({ haircuts }: NewProps) {
   const [ customer, setCustomer] = useState('');
+  const [haircutSelected, setHaircutSelected] = useState(haircuts[0]);
+  const router = useRouter();
+
+  function handleChangeSelect(id: string) {
+    const haircutItem = haircuts.find(item => item.id === id);
+
+    setHaircutSelected(haircutItem);
+  }
+
+  async function handleRegister() {
+    if(!customer) {
+      alert('Preencha o nome do cliente.');
+      return;
+    }
+
+    try {
+      const apiClient = setupApiClient();
+      await apiClient.post('schedule', {
+        customer: customer,
+        haircut_id: haircutSelected.id
+      });
+
+      router.push('/dashboard');
+    }
+    catch(err) {
+      console.log(err);
+    }
+  }
 
   return (
     <>
@@ -33,13 +76,20 @@ export default function New() {
               onChange={ (e: ChangeEvent<HTMLInputElement>) => setCustomer(e.target.value)}
             />
 
-            <Select bg={'barber.900'} mb={3} size={'lg'} w={'85%'}>
-              <option key={1} value={'Barba completa'}>Barba completa</option>
+            <Select 
+              bg="barber.900"
+              mb={3}
+              size="lg"
+              w="85%"
+              onChange={(e) => handleChangeSelect(e.target.value)}
+            >
+              {haircuts?.map(item => (
+                <option key={item.id} value={item.id}>{item.name}</option>
+              ))}
             </Select>
 
-            <Button w={'85%'} size={'lg'} color={'gray.900'} bg={'button.cta'} _hover={{ bg: '#ffb13e' }}>
-
-
+            <Button w={'85%'} size={'lg'} color={'gray.900'} bg={'button.cta'} _hover={{ bg: '#ffb13e' }} onClick={handleRegister}>
+              Cadastrar
             </Button>
           </Flex>
           
@@ -48,3 +98,39 @@ export default function New() {
     </>
   )
 }
+
+export const getServerSideProps = canSRRAuth(async (ctx) => {
+  try {
+    const apiClient = setupApiClient(ctx);
+    const response = await apiClient.get('haircuts', {
+      params: {
+        status: true
+      }
+    });
+
+    if(response.data == null) {
+      return {
+        redirect: {
+          destination: '/dashboard',
+          permanent: false
+        }
+      }
+    }
+
+    return {
+      props: {
+        haircuts: response.data
+      }
+    }
+  }
+  catch(err) {
+    console.log(err);
+
+    return {
+      redirect: {
+        destination: '/dashboard',
+        permanent: false
+      }
+    }
+  }
+});
