@@ -1,15 +1,19 @@
-import Head from 'next/head'
-import { Flex, Text} from '@chakra-ui/react'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Head from 'next/head';
 
-export default function Home(){
-  return(
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/login');
+  }, [router]);
+
+  return (
     <>
       <Head>
         <title>BarberPRO - Seu sistema completo</title>
       </Head>
-      <Flex background="barber.900" height="100vh" alignItems="center" justifyContent="center">
-        <Text fontSize={30}>Página Home</Text>
-      </Flex>
     </>
-  )
+  );
 }
