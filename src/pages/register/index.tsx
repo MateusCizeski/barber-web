@@ -1,114 +1,116 @@
-import { useState, useContext } from "react";
-import Head from "next/head";
-import Image from "next/image";
+import { useState, useContext } from 'react';
+import Head from 'next/head'
+import Image from 'next/image';
 import logoImg from '../../../public/images/logo.svg'
-import { Button, Center, Flex, Input, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import { AuthContext } from "@/context/AuthContext";
-import { canSRRGuest } from "@/utils/canSSRGuest";
+import { Flex, Text, Center, Input, Button } from '@chakra-ui/react'
 
-export default function Register() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+import Link from 'next/link'
+
+import { AuthContext } from '../../context/AuthContext'
+import { canSSRGuest } from '../../utils/canSSRGuest'
+
+export default function Register(){
   const { signUp } = useContext(AuthContext);
 
-  async function handleRegister() {
-    if(name === '' && email === '' && password === '') return;
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-    await signUp({ name, email, password });
+  async function handleRegister(){
+      if(name === '' && email === '' && password === ''){
+        return;
+      }
+
+      await signUp({
+        name,
+        email,
+        password
+      })
   }
 
-  return (
+
+  return(
     <>
       <Head>
-        <title>BarberPRO - Cadastre-se</title>
+        <title>Cria sua conta no BarberPRO</title>
       </Head>
-      <Flex sx={{
-        background: "barber.900",
-        height: "100vh",
-        alignItems: "center",
-        justifyContent: "center", 
-        }} 
-      >
-        <Flex width={640} direction='column' p={14} rounded={8}>
-            <Center p={4}>
-                <Image 
-                    src={logoImg}
-                    quality={100}
-                    objectFit="fill"
-                    alt="logo barberPro"
-                    width={240}
-                />
-            </Center>
-
-            <Input 
-              background="barber.400" 
-              variant="filled" 
-              size="lg" 
-              placeholder="Nome da barbearia" 
-              type="text"
-              mb={3}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+      <Flex background="barber.900" height="100vh" alignItems="center" justifyContent="center">
+        
+        <Flex width={640} direction="column" p={14} rounded={8}>
+          <Center p={4}>
+            <Image
+              src={logoImg}
+              quality={100}
+              width={240}
+              objectFit="fill"
+              alt="Logo barberpro"
             />
+          </Center>
 
-            <Input
-              sx={{
-                background: "barber.400", 
-                variant: "filled",
-                size: "lg", 
-                placeholder: "email@email.com", 
-                type: "email",
-                mb: 3
-              }}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <Input
+            background="barber.400"
+            variant="filled"
+            size="lg"
+            placeholder="Nome da barbearia"
+            type="text"
+            mb={3}
+            value={name}
+            onChange={ (e) => setName(e.target.value) }
+            color="white"
+          />
 
-            <Input  sx={{
-              background:"barber.400", 
-              variant:"filled" ,
-              size:"lg",
-              placeholder:"*********", 
-              type:"text",
-              mb:6
-            }}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+          <Input
+            background="barber.400"
+            variant="filled"
+            size="lg"
+            placeholder="email@email.com"
+            type="email"
+            mb={3}
+            value={email}
+            onChange={ (e) => setEmail(e.target.value) }
+            color="white"
+          />
 
-            <Button sx={{
-              background: "button.cta",
-              mb: 6,
-              color: "gray.900",
-              size: "lg"
+          <Input
+            background="barber.400"
+            variant="filled"
+            size="lg"
+            placeholder="********"
+            type="text"
+            mb={6}
+            value={password}
+            onChange={ (e) => setPassword(e.target.value) }
+            color="white"
+          />
 
-            }}
-              _hover={{ background: "#ffb13e" }}
-              onClick={handleRegister}
-            >
-              Cadastrar
-            </Button>
+          <Button
+            onClick={handleRegister}
+            background="button.cta"
+            mb={6}
+            color="gray.900"
+            size="lg"
+            _hover={{ bg: "#ffb13e" }}
+          >
+            Cadastrar
+          </Button>
 
-            <Center mt={2}>
-              <Link href="/login">
-                <Text sx= {{
-                  cursor: "pointer", 
-                  color: "#fff"
-                }}>
-                  Já possui conta? <strong>Faça o login</strong></Text>
-              </Link>
-            </Center>
+
+          <Center mt={2}>
+            <Link href="/login">
+              <Text cursor="pointer">Já possui uma conta? <strong>Faça login</strong></Text>
+            </Link>
+          </Center>
+
 
         </Flex>
+
       </Flex>
     </>
-  );
+  )
 }
 
-export const getServerSideProps = canSRRGuest(async (ctx) => {
-  return {
+export const getServerSideProps = canSSRGuest(async (ctx) => {
+  return{
     props: {}
   }
-});
+})

@@ -3,10 +3,10 @@ import { parseCookies } from "nookies";
 import { AuthTokenError } from "./errors/AuthTokenError";
 import { signOut } from "@/context/AuthContext";
 
-export function setupApiClient(ctx = undefined) {
+export function setupAPIClient(ctx = undefined) {
     let cookies = parseCookies(ctx);
     const api = axios.create({
-        baseURL: process.env.NEXT_PUBLIC_API_URL,
+        baseURL: 'https://meuservidorubuntu.com.br/api/barber',
         headers: {
             Authorization: `Bearer ${cookies['@barber.token']}`
         }

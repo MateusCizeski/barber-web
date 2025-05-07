@@ -13,9 +13,9 @@ import {
 import Link from 'next/link'
 import { IoMdPerson } from 'react-icons/io'
 
-import { canSRRAuth } from '@/utils/canSSRAuth';
+import { canSSRAuth } from '../../utils/canSSRAuth'
 import { Sidebar } from '../../components/sidebar'
-import { setupApiClient } from '@/services/api';
+import { setupAPIClient } from '../../services/api'
 import { ModalInfo } from '../../components/modal'
 
 
@@ -40,7 +40,7 @@ export default function Dashboard({ schedule }: DashboardProps){
 
   const { isOpen, onOpen, onClose } = useDisclosure(); 
 
-  const [isMobile] = useMediaQuery(["(max-width: 500px)"])
+  const [isMobile] = useMediaQuery("(max-width: 500px)")
 
   function handleOpenModal(item: ScheduleItem ){
     setService(item);
@@ -49,19 +49,19 @@ export default function Dashboard({ schedule }: DashboardProps){
 
   async function handleFinish(id: string){
     try{
-      const apiClient = setupApiClient();
+      const apiClient = setupAPIClient();
       await apiClient.delete('/schedule', {
         params:{
           schedule_id: id
         }
-      });
+      })
 
 
       const filterItem = list.filter(item => {
         return (item?.id !== id)
-      });
+      })
 
-      setList(filterItem);
+      setList(filterItem)
       onClose();
 
     }catch(err){
@@ -83,7 +83,7 @@ export default function Dashboard({ schedule }: DashboardProps){
               Agenda
             </Heading>
             <Link href="/new">
-              <Button>Registrar</Button>
+              <Button bg="gray.700" _hover={{ background: 'gray.700' }}>Registrar</Button>
             </Link>
           </Flex>
 
@@ -110,7 +110,7 @@ export default function Dashboard({ schedule }: DashboardProps){
               >
                 <Flex direction="row" mb={isMobile ? 2 : 0} align="center" justify="center">
                   <IoMdPerson size={28} color="#f1f1f1" />
-                  <Text fontWeight="bold" ml={4}>
+                  <Text fontWeight="bold" ml={4} noOfLines={1}>
                     {item?.customer}
                   </Text>
                 </Flex>
@@ -131,16 +131,16 @@ export default function Dashboard({ schedule }: DashboardProps){
         onOpen={onOpen}
         onClose={onClose}
         data={service}
-        finishService={() => handleFinish(service?.id)}
+        finishService={ () => handleFinish(service?.id) }
       />
     </>
   )
 }
 
-export const getServerSideProps = canSRRAuth(async (ctx) => {
+export const getServerSideProps = canSSRAuth(async (ctx) => {
 
   try{
-    const apiClient = setupApiClient(ctx);
+    const apiClient = setupAPIClient(ctx);
     const response = await apiClient.get("/schedule")
 
     return{

@@ -1,215 +1,219 @@
-import { useState, ChangeEvent } from "react";
-import Head from "next/head";
-import  {
-    Flex,
-    Text,
-    Heading,
-    Button,
-    useMediaQuery,
-    Input,
-    Stack,
-    Switch
-} from '@chakra-ui/react';
-import { Sidebar } from "@/components/sidebar";
+import { useState, ChangeEvent } from 'react'
+import Head from 'next/head';
+import {
+  Flex,
+  Text,
+  Heading,
+  Button,
+  useMediaQuery,
+  Input,
+  Stack,
+  Switch
+} from '@chakra-ui/react'
+
+import { Sidebar } from '../../components/sidebar'
 import { FiChevronLeft } from 'react-icons/fi'
-import Link from "next/link";
-import { canSRRAuth } from "@/utils/canSSRAuth";
-import { setupApiClient } from "@/services/api";
+import Link from 'next/link'
 
-interface HaircutProps {
-    id: string;
-    name: string;
-    price: string | number;
-    status: boolean;
-    user_id: string;
+import { canSSRAuth } from '../../utils/canSSRAuth'
+import { setupAPIClient } from '../../services/api'
+
+interface HaircutProps{
+  id: string;
+  name: string;
+  price: string | number;
+  status: boolean;
+  user_id: string;
 }
 
-interface SubscriptionsProps {
-    id: string;
-    status: string;
+interface SubscriptionProps{
+  id: string;
+  status: string;
 }
 
-interface EditHaircutProps {
-    haircut: HaircutProps;
-    subscription: SubscriptionsProps;
+interface EditHaircutProps{
+  haircut: HaircutProps;
+  subscription: SubscriptionProps | null;
 }
 
-export default function EditHaircut({ haircut, subscription }: EditHaircutProps) {
-    const [isMobile] = useMediaQuery("(max-width: 500px)");
-    const [name, setName] = useState(haircut?.name);
-    const [price, setPrice] = useState(haircut?.price);
-    const [status, setStatus] = useState(haircut?.status);
-    const [disabledHaircut, setDisabledHaircut] = useState(haircut?.status ? "disabled" : "enabled");
+export default function EditHaircut({ subscription, haircut }: EditHaircutProps){
+  const [isMobile] = useMediaQuery("(max-width: 500px)")
 
-    function handleChangeStatus(e: ChangeEvent<HTMLInputElement>) {
-        if(e.target.value === 'disabled') {
-            setDisabledHaircut('enable');
-            setStatus(false);
-        }else {
-            setDisabledHaircut('disabled');
-            setStatus(true);
-        }
+  const [name, setName] = useState(haircut?.name)
+  const [price, setPrice] = useState(haircut?.price)
+  const [status, setStatus] = useState(haircut?.status)
+
+  const [disableHaircut, setDisableHaircut] = useState(haircut?.status ? "disabled" : "enabled" )
+
+  function handleChangeStatus(e: ChangeEvent<HTMLInputElement>){
+    if(e.target.value === 'disabled'){
+      setDisableHaircut("enabled")
+      setStatus(false);
+    }else{
+      setDisableHaircut("disabled");
+      setStatus(true);
+    }  
+  }
+
+
+  async function handleUpdate(){
+    if(name === '' || price === ''){
+      return;
     }
 
-    async function handleUpdate() {
-        if(!name || !price) return;
+    try{
 
-        try {
-            const apiClient = setupApiClient();
-            await apiClient.put('/haorcut', {
-                name,
-                price,
-                status,
-                haircut_id: haircut?.id
-            });
-        }
-        catch(err) {
-            console.log(err)
-        }
+      const apiClient = setupAPIClient();
+      await apiClient.put('/haircut', {
+        name: name,
+        price: price,
+        status: status,
+        haircut_id: haircut?.id
+      })
+
+      alert("Corte atualizado com sucesso!")
+
+
+    }catch(err){
+      console.log(err);
     }
 
-    return (
-        <>
-            <Head>
-                <title>Editando modelo de corte - BarberPRO</title>
-            </Head>
-            <Sidebar>
-                <Flex sx={{
-                    direction: 'column',
-                    alignItems: 'flex-start',
-                    justifyContent: 'flex-start'
-                }}>
-                    <Flex 
-                        direction = {isMobile ? "column" : "row"}
-                        w='100%'
-                        alignItems={isMobile ? "flex-start" : "center"}
-                        justifyContent="flex-start"
-                        mb={isMobile ? 4 : 0}
-                    >
+  }
 
-                        <Link href="/haircuts">
-                            <Button 
-                                sx={{
-                                    mr: 3, 
-                                    p: 4, 
-                                    display: 'flex', 
-                                    alignItems: 'center', 
-                                    justifyContent: 'center',
-                                }} 
-                            >
-                                <FiChevronLeft size={24} color="#fff"/>
-                                Voltar
-                            </Button>
-                        </Link>
+  return(
+    <>
+      <Head>
+        <title>Editando modelo de corte - BarberPRO</title>
+      </Head>
+      <Sidebar>
+        <Flex direction="column" alignItems="flex-start" justifyContent="flex-start">
 
-                        <Heading fontSize={isMobile ? '22px' : '3xl'} sx={{ color: "white" }} >Editar corte</Heading>
-                    </Flex>
+          <Flex 
+            direction={isMobile ? "column" : "row"}
+            w="100%"
+            alignItems={isMobile ? "flex-start" : "center" }
+            justifyContent="flex-start"
+            mb={isMobile ? 4 : 0}
+          >
+            <Link href="/haircuts">
+              <Button bg="gray.700" _hover={{ background: 'gray.700' }} mr={3} p={4} display="flex" alignItems="center" justifyContent="center">
+                <FiChevronLeft size={24} color="#FFF"/>
+                Voltar
+              </Button>
+            </Link>
 
-                    <Flex mt={4} maxW={'700px'} pt={8} pb={8} w={'100%'} bg={'barber.400'} direction={'column'} align={'center'} justify={'center'}>
-                        <Heading fontSize={isMobile ? '22px' : '3xl'} color={"white"}>Editar corte</Heading>
+            <Heading fontSize={isMobile ? "22px" : "3xl"} color="white">
+              Editar corte
+            </Heading>
+          </Flex>
 
-                        <Flex w={'85%'} direction={"column"}>
-                            <Input 
-                                sx={{
-                                    placeholder: "Nome do corte",
-                                    bg: "gray.900",
-                                    mb: 3,
-                                    size: 'lg',
-                                    type: "text",
-                                    w: '100%'
-                                }}
-                                value={name}
-                                onChange={ (e) => setName(e.target.value) }
-                            />
+          <Flex mt={4} maxW="700px" pt={8} pb={8} w="100%" bg="barber.400" direction="column" align="center" justify="center">
+            <Heading fontSize={isMobile ? "22px" : "3xl"} mb={4}>Editar corte</Heading>
 
-                            <Input 
-                                sx={{
-                                    placeholder: "Valor do corte",
-                                    bg: "gray.900",
-                                    mb: 3,
-                                    size: 'lg',
-                                    type: "number",
-                                    w: '100%'
-                                }}
-                                value={price}
-                                onChange={ (e) => setPrice(e.target.value) }
-                            />
+            <Flex w="85%" direction="column">
+              <Input
+                placeholder="Nome do corte"
+                bg="gray.900"
+                mb={3}
+                size="lg"
+                type="text"
+                w="100%"
+                value={name}
+                onChange={ (e) => setName(e.target.value)}
+              />
 
-                            <Stack 
-                                sx={{
-                                    mb: 6, 
-                                    align: 'center', 
-                                    direction: 'row'
-                                }} 
-                            >
-                                <Text sx={{ fontWeight: 'bold' }} >Desativar corte</Text>
+              <Input
+                placeholder="Valor do seu corte ex 45.90"
+                bg="gray.900"
+                mb={3}
+                size="lg"
+                type="number"
+                w="100%"
+                value={price}
+                onChange={ (e) => setPrice(e.target.value)}
+              />
 
-                                <Switch 
-                                    sx={{ size: 'lg', colorScheme: "red" }} 
-                                    value={disabledHaircut} 
-                                    isChecked={disabledHaircut === 'disabled' ? false : true}
-                                    onChange={ (e: ChangeEvent<HTMLInputElement>) => handleChangeStatus(e) }
-                                />
+              <Stack mb={6} align="center" direction="row">
+                <Text fontWeight="bold">Desativar corte</Text>
+                <Switch
+                  size="lg"
+                  colorScheme="red"
+                  value={disableHaircut}
+                  isChecked={disableHaircut === 'disabled' ? false : true}
+                  onChange={ (e: ChangeEvent<HTMLInputElement>) => handleChangeStatus(e) }
+                />
+              </Stack>
 
-                            </Stack>
+              <Button
+                mb={6}
+                w="100%"
+                bg="button.cta"
+                color="gray.900"
+                _hover={{ bg: "#FFB13e" }}
+                disabled={subscription?.status !== 'active'}
+                onClick={handleUpdate}
+              >
+                Salvar
+              </Button>
 
-                            <Button 
-                                mb={6} 
-                                w={'100%'} 
-                                bg={'button.cta'} 
-                                color={'gray.900'} 
-                                _hover={{ bg: "#ffb13e" }} 
-                                disabled={subscription?.status !== 'active'} 
-                                onClick={handleUpdate}
-                            >
-                                Salvar
-                            </Button>
-
-                            { subscription?.status !== 'active' && (
-                                <Flex direction={'row'} align={'center'} justify={'center'}>
-                                    <Link href='/planos'>
-                                        <Text fontWeight={'bold'} mr={1} color={'#31fb6a'} cursor={'pointer'}>Seja premium</Text>
-                                    </Link>
-                                    <Text>
-                                        e tenha todos acessos liberados
-                                    </Text>
-                                </Flex>
-                            )}
-                        </Flex>
-                    </Flex>
+              { subscription?.status !== 'active' && (
+                <Flex direction="row" align="center" justify="center">
+                  <Link href="/planos">
+                    <Text cursor="pointer" fontWeight="bold" mr={1} color="#31fb6a">
+                      Seja premium
+                    </Text>
+                  </Link>
+                  <Text>
+                    e tenha todos acessos liberados.
+                  </Text>
                 </Flex>
-            </Sidebar>
-        </>
-    )
+              )}
+
+
+            </Flex>
+
+          </Flex>
+
+
+        </Flex>
+      </Sidebar>
+    </>
+  )
 }
 
-export const getServerSideProps = canSRRAuth(async (ctx) => {
-    const { id } = ctx.params;
 
-    try {
-        const apiClient = setupApiClient(ctx);
-        const check = await apiClient.get('/haircut/check');
-        const response = await apiClient.get('/haircut/detail', {
-            params: {
-                haircut_id: id
-            }
-        });
+export const getServerSideProps = canSSRAuth(async (ctx) => {
+  const { id } = ctx.params;
 
-        return {
-            props: {
-                haircut: response.data,
-                subscription: check.data?.subscriptions
-            }
-        }
+  try{
+    const apiClient = setupAPIClient(ctx);
+
+    const check = await apiClient.get('/haircut/check');
+
+    const response = await apiClient.get('/haircut/detail', {
+      params:{
+        haircut_id: id,
+      }
+    })
+
+    
+    return{
+      props:{
+        haircut: response.data,
+        subscription: check.data?.subscriptions
+      }
     }
-    catch(err) {
-        console.log(err);
 
-        return {
-            redirect: {
-                destination: '/dashboard',
-                permanent: false
-            }
-        }
+
+  }catch(err){
+    console.log(err);
+
+    return{
+      redirect:{
+        destination: '/haircuts',
+        permanent: false,
+      }
     }
+  }
+
 })
