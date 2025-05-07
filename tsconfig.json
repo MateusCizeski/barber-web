@@ -22,9 +22,9 @@
       "@chakra-ui/react"
     ],
     "skipLibCheck": true,
-    "strict": false,
-    "noEmit": true,
-    "incremental": true,
+    "strict": false, 
+    "noEmit": true, 
+    "incremental": true, 
     "resolveJsonModule": true,
     "isolatedModules": true,
     "maxNodeModuleJsDepth": 0
